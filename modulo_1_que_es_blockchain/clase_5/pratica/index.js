@@ -1,34 +1,34 @@
 const crypto = require('crypto');
 
-// --- 1. GERANDO UM PAR DE CHAVES ---
+// --- 1. GENERANDO UN PAR DE CLAVES ---
 
-// Gerando um par de chaves pública e privada usando o algoritmo ECDSA com a curva secp256k1
+// Generando un par de claves pública y privada utilizando el algoritmo ECDSA con la curva secp256k1
 const { publicKey, privateKey } = crypto.generateKeyPairSync('ec', {
   namedCurve: 'secp256k1', 
 });
 
-// --- 2. ASSINANDO UMA MENSAGEM ---
+// --- 2. FIRMANDO UN MENSAJE ---
 
-// Mensagem a ser assinada
-const message = 'Esta é uma mensagem secreta';
-console.log("\nMensagem original:", message);
+// Mensaje a ser firmado
+const message = 'Este es un mensaje secreto';
+console.log("\nMensaje original:", message);
 
-// --- 2.1. CRIANDO UM HASH DA MENSAGEM ---
+// --- 2.1. CREANDO UN HASH DEL MENSAJE ---
 
-// Criar um hash da mensagem usando SHA256
+// Crear un hash del mensaje utilizando SHA256
 const hash = crypto.createHash('sha256').update(message).digest();
-console.log("\nHash da mensagem:", hash.toString('hex'));
+console.log("\nHash del mensaje:", hash.toString('hex'));
 
-// --- 2.2. ASSINANDO O HASH ---
+// --- 2.2. FIRMANDO EL HASH ---
 
-// Assinar o hash da mensagem com a chave privada
+// Firmar el hash del mensaje con la clave privada
 const signature = crypto.sign('sha256', hash, privateKey);
-console.log("Assinatura:", signature.toString('hex'));
+console.log("Firma:", signature.toString('hex'));
 
-// // --- 3. VERIFICANDO A ASSINATURA ---
+// // --- 3. VERIFICANDO LA FIRMA ---
 
-// // Verificar a assinatura com a chave pública
+// // Verificar la firma con la clave pública
 const isValid = crypto.verify('sha256', hash, publicKey, signature);
 
-// console.log("\n--- VERIFICANDO A ASSINATURA ---");
-console.log('Assinatura válida?', isValid); 
+// console.log("\n--- VERIFICANDO LA FIRMA ---");
+console.log('¿Firma válida?', isValid);

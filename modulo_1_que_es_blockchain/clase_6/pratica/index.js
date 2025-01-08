@@ -3,36 +3,36 @@ const { ethers } = require("ethers");
 
 // const privateKey = ethers.Wallet.createRandom().privateKey;
 
-// Criar uma nova instância de Wallet usando a chave privada
+// Crear una nueva instancia de Wallet utilizando la clave privada
 const wallet = new ethers.Wallet('f91f55bb388df7e8f980428a3d36777d45d164265c64ba15b300eb18f95d4b73');
 
-// Conectar à rede Goerli (ou outra testnet de sua preferência)
+// Conectar a la red Goerli (o cualquier otra testnet de su preferencia)
 const provider = new ethers.JsonRpcProvider("https://rpc-amoy.polygon.technology");
-// **IMPORTANTE:** Substitua 'SEU_INFURA_PROJECT_ID' pelo seu ID do projeto Infura
+// **IMPORTANTE:** Reemplace 'SEU_INFURA_PROJECT_ID' por su ID de proyecto Infura
 
-// Conectar a wallet ao provider
+// Conectar la wallet al provider
 const connectedWallet = wallet.connect(provider);
 
-// Endereço de destino (substitua pelo endereço para onde deseja enviar)
+// Dirección de destino (reemplace con la dirección a la que desea enviar)
 const destinatario = "0xCC9e724337542EE66e05a62606eDf93DFF146ff7";
 
-// Valor a ser enviado em Ether
+// Valor a ser enviado en Ether
 const valor = ethers.parseEther("0.0001");
 
-// Criar a transação
+// Crear la transacción
 const tx = {
   to: destinatario,
   value: valor,
-  gasLimit: 21000, // Gas limit padrão para transferências simples
+  gasLimit: 21000, // Gas limit estándar para transferencias simples
 };
 
-// Assinar e enviar a transação
+// Firmar y enviar la transacción
 connectedWallet
   .sendTransaction(tx)
   .then((transaction) => {
-    console.log("Transação enviada:", transaction.hash);
-    // Você pode usar o transaction.hash para acompanhar o status da transação no block explorer
+    console.log("Transacción enviada:", transaction.hash);
+    // Puede usar el transaction.hash para seguir el estado de la transacción en el block explorer
   })
   .catch((error) => {
-    console.error("Erro ao enviar transação:", error);
+    console.error("Error al enviar transacción:", error);
   });

@@ -1,113 +1,113 @@
-# Aula 4: **Contas: Conceitos Fundamentais**
+# Clase 4: **Cuentas: Conceptos Fundamentales**
 
-## Abertura
+## Introducción
 
-Olá! Bem-vindo à quarta aula do nosso curso de Solidity para iniciantes. Nas aulas anteriores, exploramos conceitos fundamentais como o block explorer, o Ethereum, os contratos inteligentes, o consenso e a EVM. Hoje, vamos aprofundar nosso entendimento sobre um elemento essencial da blockchain Ethereum: as **contas**. Compreender como as contas funcionam é crucial para interagir com a rede e desenvolver contratos inteligentes eficazes.
+¡Hola! Bienvenido a la cuarta clase de nuestro curso de Solidity para principiantes. En las clases anteriores, exploramos conceptos fundamentales como el explorador de bloques, Ethereum, contratos inteligentes, consenso y la EVM. Hoy, vamos a profundizar nuestro entendimiento sobre un elemento esencial de la blockchain Ethereum: las **cuentas**. Comprender cómo funcionan las cuentas es crucial para interactuar con la red y desarrollar contratos inteligentes efectivos.
 
-### Programação:
+### Programación:
 
-1. Introdução às Contas na Blockchain Ethereum
-2. Contas Externas (EOA)
-3. Contratos Inteligentes como Contas
-4. Interações entre Contas e Importância nos Contratos Inteligentes
+1. Introducción a las Cuentas en la Blockchain Ethereum
+2. Cuentas Externas (EOA)
+3. Contratos Inteligentes como Cuentas
+4. Interacciones entre Cuentas y su Importancia en los Contratos Inteligentes
 
 ---
 
-## 1. Introdução às Contas na Blockchain Ethereum
+## 1. Introducción a las Cuentas en la Blockchain Ethereum
 
-Na blockchain Ethereum, uma **conta** representa uma entidade que pode enviar e receber transações, bem como manter um saldo de Ether (ETH). Pense nas contas como os "usuários" da rede. Cada conta possui um **endereço único**, um identificador alfanumérico que a representa na blockchain.
+En la blockchain Ethereum, una **cuenta** representa una entidad que puede enviar y recibir transacciones, así como mantener un saldo de Ether (ETH). Piensa en las cuentas como los "usuarios" de la red. Cada cuenta tiene una **dirección única**, un identificador alfanumérico que la representa en la blockchain.
 
-### Endereços na Ethereum
+### Direcciones en Ethereum
 
-- **Formato**: Geralmente, um endereço Ethereum é representado por uma sequência de 42 caracteres hexadecimais, começando com `0x`.
-- **Exemplo**: `0x4bbeEB066eD09B7AEd07bF39EeD4B84D0c71F5e6`
+- **Formato**: Generalmente, una dirección Ethereum se representa por una secuencia de 42 caracteres hexadecimales, comenzando con `0x`.
+- **Ejemplo**: `0x4bbeEB066eD09B7AEd07bF39EeD4B84D0c71F5e6`
 
-### Tipos de Contas
+### Tipos de Cuentas
 
-Existem dois tipos principais de contas na Ethereum:
+Existen dos tipos principales de cuentas en Ethereum:
 
-1. **Contas Externas (EOA - External Owned Accounts)**: Controladas por indivíduos ou entidades externas usando chaves privadas.
-2. **Contas de Contrato (Contratos Inteligentes)**: Contas que contêm código executável armazenado na blockchain.
+1. **Cuentas Externas (EOA - External Owned Accounts)**: Controladas por individuos o entidades externas utilizando claves privadas.
+2. **Cuentas de Contrato (Contratos Inteligentes)**: Cuentas que contienen código ejecutable almacenado en la blockchain.
 
-Entender a diferença entre esses tipos de contas é fundamental para a interação com a rede Ethereum e para o desenvolvimento de contratos inteligentes.
+Entender la diferencia entre estos tipos de cuentas es fundamental para interactuar con la red Ethereum y desarrollar contratos inteligentes.
 
-## 2. Contas Externas (EOA)
+## 2. Cuentas Externas (EOA)
 
-### O que são Contas Externas?
+### ¿Qué son las Cuentas Externas?
 
-As **Contas Externas** são controladas por usuários humanos (ou entidades) e são as contas que usamos para enviar e receber ETH e interagir com contratos inteligentes.
+Las **Cuentas Externas** son controladas por usuarios humanos (o entidades) y son las cuentas que utilizamos para enviar y recibir ETH e interactuar con contratos inteligentes.
 
-### Características das Contas Externas
+### Características de las Cuentas Externas
 
-- **Controle por Chaves**: Cada EOA é associada a um par de chaves criptográficas:
-  - **Chave Pública**: Funciona como um número de conta bancária. É visível publicamente e permite que outros identifiquem a conta na rede.
-  - **Chave Privada**: Semelhante a uma senha ou PIN. Deve ser mantida secreta, pois permite o controle total da conta e dos fundos associados.
-- **Assinaturas Digitais**: As transações são autorizadas pela chave privada através de assinaturas digitais, garantindo a autenticidade e a segurança.
-- **Envio de Transações**: Apenas EOAs podem iniciar transações na Ethereum. Contratos inteligentes não podem enviar transações por conta própria sem serem acionados por uma EOA.
+- **Control por Claves**: Cada EOA está asociada a un par de claves criptográficas:
+  - **Clave Pública**: Funciona como un número de cuenta bancaria. Es visible públicamente y permite que otros identifiquen la cuenta en la red.
+  - **Clave Privada**: Similar a una contraseña o PIN. Debe mantenerse secreta, ya que permite el control total de la cuenta y los fondos asociados.
+- **Firmas Digitales**: Las transacciones se autorizan mediante la clave privada a través de firmas digitales, garantizando la autenticidad y seguridad.
+- **Envío de Transacciones**: Solo las EOAs pueden iniciar transacciones en Ethereum. Los contratos inteligentes no pueden enviar transacciones por sí solos sin ser activados por una EOA.
 
-### Segurança das Chaves
+### Seguridad de las Claves
 
-- **Proteção da Chave Privada**: Se alguém obtém acesso à sua chave privada, pode controlar completamente sua conta e fundos.
-- **Melhores Práticas**:
-  - Nunca compartilhe sua chave privada.
-  - Use carteiras seguras e confiáveis.
-  - Faça backups em locais seguros.
+- **Protección de la Clave Privada**: Si alguien obtiene acceso a tu clave privada, puede controlar completamente tu cuenta y fondos.
+- **Mejores Prácticas**:
+  - Nunca compartas tu clave privada.
+  - Utiliza carteras seguras y confiables.
+  - Haz copias de seguridad en lugares seguros.
 
-## 3. Contratos Inteligentes como Contas
+## 3. Contratos Inteligentes como Cuentas
 
-### O que são Contas de Contrato?
+### ¿Qué son las Cuentas de Contrato?
 
-As **Contas de Contrato** são contas que contêm código de contrato inteligente, armazenado na blockchain. Elas não são controladas por chaves privadas, mas por código programado.
+Las **Cuentas de Contrato** son cuentas que contienen código de contrato inteligente, almacenado en la blockchain. No se controlan mediante claves privadas, sino por código programado.
 
-### Características dos Contratos Inteligentes
+### Características de los Contratos Inteligentes
 
-- **Endereço Próprio**: Cada contrato inteligente tem um endereço único na blockchain, permitindo que outros interajam com ele.
-- **Executado pela EVM**: O código do contrato é executado pela Máquina Virtual Ethereum (EVM) quando acionado por uma transação.
-- **Armazenamento Interno**: Possuem armazenamento próprio para manter dados persistentes entre execuções.
-- **Não Iniciam Transações**: Contratos não podem iniciar transações por conta própria; eles só respondem a transações iniciadas por EOAs ou outros contratos.
+- **Dirección Propia**: Cada contrato inteligente tiene una dirección única en la blockchain, lo que permite que otros interactúen con él.
+- **Ejecutado por la EVM**: El código del contrato es ejecutado por la Máquina Virtual Ethereum (EVM) cuando es activado por una transacción.
+- **Almacenamiento Interno**: Tienen almacenamiento propio para mantener datos persistentes entre ejecuciones.
+- **No Inician Transacciones**: Los contratos no pueden iniciar transacciones por sí mismos; solo responden a transacciones iniciadas por EOAs u otros contratos.
 
-### Interação com Outras Contas
+### Interacción con Otras Cuentas
 
-- **Receber ETH**: Podem receber ETH como parte de uma transação.
-- **Executar Código**: Quando uma transação é direcionada ao endereço de um contrato, o código é executado.
-- **Chamar Outros Contratos**: Podem interagir com outros contratos inteligentes, permitindo a criação de aplicações complexas.
+- **Recibir ETH**: Pueden recibir ETH como parte de una transacción.
+- **Ejecutar Código**: Cuando una transacción es dirigida a la dirección de un contrato, el código es ejecutado.
+- **Llamar a Otros Contratos**: Pueden interactuar con otros contratos inteligentes, permitiendo la creación de aplicaciones complejas.
 
-## 4. Interações entre Contas e Importância nos Contratos Inteligentes
+## 4. Interacciones entre Cuentas e Importancia en los Contratos Inteligentes
 
-### Como as Contas Interagem?
+### ¿Cómo Interactúan las Cuentas?
 
-- **EOAs Iniciam Transações**: Usuários enviam transações a outras EOAs ou contratos inteligentes usando suas chaves privadas.
-- **Contratos Executam Código**: Quando um contrato recebe uma transação, seu código é executado pela EVM.
-- **Chamadas Internas**: Contratos podem chamar funções de outros contratos, permitindo a modularidade e reutilização de código.
+- **EOAs Inician Transacciones**: Los usuarios envían transacciones a otras EOAs o contratos inteligentes usando sus claves privadas.
+- **Contratos Ejecutan Código**: Cuando un contrato recibe una transacción, su código es ejecutado por la EVM.
+- **Llamadas Internas**: Los contratos pueden llamar a funciones de otros contratos, lo que permite la modularidad y reutilización de código.
 
-### Importância para Contratos Inteligentes
+### Importancia para los Contratos Inteligentes
 
-- **Autonomia Limitada**: Contratos dependem de EOAs para serem acionados. Isso garante que os usuários tenham controle sobre quando e como os contratos são executados.
-- **Segurança**: A distinção clara entre EOAs e contratos ajuda a manter a segurança da rede. Contratos não podem roubar chaves privadas, pois não possuem acesso a elas.
-- **Desenvolvimento de DApps**: Entender como as contas interagem é essencial para criar aplicações descentralizadas (DApps) que funcionem corretamente na Ethereum.
+- **Autonomía Limitada**: Los contratos dependen de las EOAs para ser activados. Esto garantiza que los usuarios tengan control sobre cuándo y cómo se ejecutan los contratos.
+- **Seguridad**: La clara distinción entre EOAs y contratos ayuda a mantener la seguridad de la red. Los contratos no pueden robar claves privadas, ya que no tienen acceso a ellas.
+- **Desarrollo de DApps**: Entender cómo interactúan las cuentas es esencial para crear aplicaciones descentralizadas (DApps) que funcionen correctamente en Ethereum.
 
-### Cenários Comuns de Interação
+### Escenarios Comunes de Interacción
 
-- **Usuário Envia ETH para Outro Usuário**: Transferência simples entre duas EOAs.
-- **Usuário Interage com um Contrato**: Envia uma transação para executar uma função do contrato, como participar de uma ICO ou comprar um NFT.
-- **Contrato Chama Outro Contrato**: Um contrato de leilão chama um contrato de token para transferir a propriedade de um item.
+- **Usuario Envía ETH a Otro Usuario**: Transferencia simple entre dos EOAs.
+- **Usuario Interactúa con un Contrato**: Envía una transacción para ejecutar una función del contrato, como participar en una ICO o comprar un NFT.
+- **Contrato Llama a Otro Contrato**: Un contrato de subasta llama a un contrato de token para transferir la propiedad de un ítem.
 
-## Conclusão
+## Conclusión
 
-Nesta aula, mergulhamos nos conceitos fundamentais das contas na Ethereum, entendendo a diferença entre Contas Externas e Contas de Contrato. Compreendemos como as contas interagem na rede, a importância das chaves públicas e privadas, e como tudo isso se relaciona com os contratos inteligentes.
+En esta clase, profundizamos en los conceptos fundamentales de las cuentas en Ethereum, entendiendo la diferencia entre Cuentas Externas y Cuentas de Contrato. Comprendimos cómo interactúan las cuentas en la red, la importancia de las claves públicas y privadas, y cómo todo esto se relaciona con los contratos inteligentes.
 
-Dominar esses conceitos é crucial para qualquer desenvolvedor que deseja criar contratos inteligentes seguros e eficazes. Com esse conhecimento, você estará mais preparado para escrever código que interage corretamente com outras contas e para entender o comportamento das transações na rede.
+Dominar estos conceptos es crucial para cualquier desarrollador que desee crear contratos inteligentes seguros y efectivos. Con este conocimiento, estarás más preparado para escribir código que interactúe correctamente con otras cuentas y entender el comportamiento de las transacciones en la red.
 
-## Recapitulação
+## Recapitulación
 
-1. **Introdução às Contas na Blockchain Ethereum**: As contas são entidades que podem enviar e receber transações, identificadas por endereços únicos.
-2. **Contas Externas (EOA)**: Controladas por usuários através de chaves públicas e privadas. São as únicas que podem iniciar transações.
-3. **Contratos Inteligentes como Contas**: Contas que contêm código executável, sem chaves privadas, e que são acionadas por transações.
-4. **Interações entre Contas**: Compreendemos como EOAs e contratos interagem, e a importância disso no desenvolvimento de contratos inteligentes.
+1. **Introducción a las Cuentas en la Blockchain Ethereum**: Las cuentas son entidades que pueden enviar y recibir transacciones, identificadas por direcciones únicas.
+2. **Cuentas Externas (EOA)**: Controladas por usuarios a través de claves públicas y privadas. Son las únicas que pueden iniciar transacciones.
+3. **Contratos Inteligentes como Cuentas**: Cuentas que contienen código ejecutable, sin claves privadas, y que son activadas por transacciones.
+4. **Interacciones entre Cuentas**: Comprendimos cómo EOAs y contratos interactúan, y la importancia de esto en el desarrollo de contratos inteligentes.
 
-## Lição de casa
-Escreva um breve resumo explicando a diferença entre uma EOA e uma conta de contrato inteligente.
+## Tarea
+Escribe un breve resumen explicando la diferencia entre una EOA y una cuenta de contrato inteligente.
 
-## Próxima aula
+## Próxima clase
 
-Na próxima aula, vamos explorar a criptografia por trás das contas Ethereum, entendendo como funcionam as chaves públicas e privadas e as assinaturas digitais. Isso aprofundará seu conhecimento sobre a segurança e autenticidade na blockchain. Até lá!
+En la próxima clase, exploraremos la criptografía detrás de las cuentas Ethereum, comprendiendo cómo funcionan las claves públicas y privadas y las firmas digitales. Esto profundizará tu conocimiento sobre la seguridad y autenticidad en la blockchain. ¡Hasta entonces!

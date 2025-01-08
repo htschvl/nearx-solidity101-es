@@ -35,7 +35,7 @@ Esse é o texto traduzido com as modificações necessárias.
 
 [Clase 2: Explorando el Block Explorer: Transacciones, Bloques y Gas](modulo_1_que_es_blockchain/clase_2/clase_2.md)
 [Clase 3: Consenso, Estado y la Máquina Virtual de Ethereum (EVM)](modulo_1_que_es_blockchain/clase_3/clase_3.md)
-[Clase 4: Cuentas: Conceptos Fundamentales]
+[Clase 4: Cuentas: Conceptos Fundamentales](modulo_1_que_es_blockchain/clase_4/clase_4.md)
 [Clase 5: Criptografía: Claves Públicas y Privadas, y Firmas Digitales]
 [Clase 6: Tu Primera Wallet]
 [Clase 7: Introducción a los Smart Contracts]

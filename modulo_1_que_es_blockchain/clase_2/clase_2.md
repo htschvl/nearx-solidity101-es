@@ -1,4 +1,4 @@
-# Clase 2: Explorando el Block Explorer: Transacciones, Bloques y Gas**
+# Clase 2: Explorando el Block Explorer: Transacciones, Bloques y Gas
 
 ## Introducción
 

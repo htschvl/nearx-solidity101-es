@@ -1,136 +1,136 @@
-# Aula 7: **Introdução aos Smart Contracts**
+# Clase 7: **Introducción a los Smart Contracts**
 
-## Abertura
+## Apertura
 
-Olá! Bem-vindo à sétima aula do nosso curso de Solidity para iniciantes. Nas aulas anteriores, exploramos conceitos fundamentais como blockchain, contas, criptografia e criamos nossa primeira wallet. Hoje, vamos mergulhar em um dos pilares mais revolucionários da tecnologia blockchain: os **smart contracts**. Vamos entender o que são, por que são considerados tão inovadores e como a linguagem Solidity se encaixa nesse contexto. Preparado para descobrir como essa tecnologia está transformando o mundo digital? Vamos lá!
+¡Hola! Bienvenido a la séptima clase de nuestro curso de Solidity para principiantes. En las clases anteriores, exploramos conceptos fundamentales como blockchain, cuentas, criptografía y creamos nuestra primera billetera. Hoy, vamos a adentrarnos en uno de los pilares más revolucionarios de la tecnología blockchain: los **smart contracts**. Entenderemos qué son, por qué se consideran tan innovadores y cómo el lenguaje Solidity encaja en este contexto. ¿Estás listo para descubrir cómo esta tecnología está transformando el mundo digital? ¡Vamos allá!
 
-### Programação:
+### Programa:
 
-1. O que são Smart Contracts?
-2. Por que os Smart Contracts são Revolucionários?
-3. Exemplos de Casos de Uso
-4. Introdução à Solidity: A Linguagem dos Contratos Inteligentes
+1. ¿Qué son los Smart Contracts?
+2. ¿Por qué los Smart Contracts son Revolucionarios?
+3. Ejemplos de Casos de Uso
+4. Introducción a Solidity: El Lenguaje de los Contratos Inteligentes
 
 ---
 
-## 1. O que são Smart Contracts?
+## 1. ¿Qué son los Smart Contracts?
 
-Os **smart contracts**, ou contratos inteligentes, são programas autoexecutáveis que residem na blockchain. Eles permitem a automatização de acordos e processos entre partes, eliminando a necessidade de intermediários.
+Los **smart contracts**, o contratos inteligentes, son programas autoejecutables que residen en la blockchain. Permiten automatizar acuerdos y procesos entre partes, eliminando la necesidad de intermediarios.
 
-### Características Principais:
+### Características Principales:
 
-- **Autoexecução**: Assim que as condições pré-definidas são atendidas, o contrato é executado automaticamente.
-- **Imutabilidade**: Uma vez implantado na blockchain, o código do contrato não pode ser alterado.
-- **Descentralização**: Operam em uma rede distribuída, sem controle centralizado.
-- **Transparência**: O código é público e pode ser auditado por qualquer pessoa.
+- **Autoejecución**: Una vez que se cumplen las condiciones predefinidas, el contrato se ejecuta automáticamente.
+- **Inmutabilidad**: Una vez desplegado en la blockchain, el código del contrato no puede ser alterado.
+- **Descentralización**: Operan en una red distribuida, sin control centralizado.
+- **Transparencia**: El código es público y puede ser auditado por cualquiera.
 
-### Analogia: Máquinas de Venda Automática
+### Analogía: Máquinas Expendedoras
 
-Imagine uma máquina de venda automática:
+Imagina una máquina expendedora:
 
-- Você insere dinheiro e seleciona um produto.
-- A máquina verifica se o valor inserido é suficiente.
-- Se for, ela entrega o produto; caso contrário, solicita mais dinheiro.
+- Insertas dinero y seleccionas un producto.
+- La máquina verifica si el valor insertado es suficiente.
+- Si es así, entrega el producto; si no, solicita más dinero.
 
-Assim como a máquina executa uma transação sem a necessidade de um vendedor, os smart contracts automatizam acordos sem intermediários, seguindo regras pré-definidas.
+Así como la máquina ejecuta una transacción sin la necesidad de un vendedor, los smart contracts automatizan acuerdos sin intermediarios, siguiendo reglas predefinidas.
 
-## 2. Por que os Smart Contracts são Revolucionários?
+## 2. ¿Por qué los Smart Contracts son Revolucionarios?
 
-Os smart contracts trazem uma série de benefícios que estão transformando a forma como fazemos negócios e interagimos digitalmente.
+Los smart contracts traen una serie de beneficios que están transformando la forma en que hacemos negocios e interactuamos digitalmente.
 
-### Benefícios:
+### Beneficios:
 
-- **Transparência**: O código é público e auditável, aumentando a confiança entre as partes envolvidas.
-- **Segurança**: Imutáveis e resistentes à censura, dificultando fraudes e manipulações.
-- **Eficiência**: Automatizam processos, reduzindo burocracia e custos operacionais.
-- **Confiança**: Eliminam a necessidade de confiar em terceiros, já que a execução é garantida pelo código.
-- **Inovação**: Permitem a criação de novas aplicações e modelos de negócio que antes não eram possíveis.
+- **Transparencia**: El código es público y auditado, lo que aumenta la confianza entre las partes involucradas.
+- **Seguridad**: Inmutables y resistentes a la censura, lo que dificulta fraudes y manipulaciones.
+- **Eficiencia**: Automatizan procesos, reduciendo la burocracia y los costos operativos.
+- **Confianza**: Eliminan la necesidad de confiar en terceros, ya que la ejecución está garantizada por el código.
+- **Innovación**: Permiten la creación de nuevas aplicaciones y modelos de negocio que antes no eran posibles.
 
-### Impacto na Sociedade e Negócios:
+### Impacto en la Sociedad y los Negocios:
 
-- **Redução de Custos**: Menos intermediários significam menos taxas e despesas.
-- **Acesso Global**: Qualquer pessoa com acesso à internet pode interagir com smart contracts.
-- **Descentralização**: Poder distribuído, diminuindo o controle de grandes corporações e governos.
+- **Reducción de Costos**: Menos intermediarios significa menos tarifas y gastos.
+- **Acceso Global**: Cualquier persona con acceso a internet puede interactuar con smart contracts.
+- **Descentralización**: Poder distribuido, disminuyendo el control de grandes corporaciones y gobiernos.
 
-## 3. Exemplos de Casos de Uso
+## 3. Ejemplos de Casos de Uso
 
-Os smart contracts estão sendo aplicados em diversos setores, trazendo inovação e eficiência.
+Los contratos inteligentes se están aplicando en diversos sectores, aportando innovación y eficiencia.
 
-### DeFi (Finanças Descentralizadas)
+### DeFi (Finanzas Descentralizadas)
 
-- **Descrição**: Protocolos financeiros que operam sem intermediários tradicionais, como bancos.
-- **Aplicações**:
-  - **Empréstimos e Empréstimos**: Plataformas que conectam credores e tomadores diretamente.
-  - **Exchanges Descentralizadas**: Permitem a troca de ativos digitais sem uma entidade central.
-  - **Stablecoins**: Criptomoedas com valor atrelado a ativos estáveis, como moedas fiduciárias.
+- **Descripción**: Protocolos financieros que operan sin los intermediarios tradicionales, como bancos.
+- **Aplicaciones**:
+  - **Préstamos y Créditos**: Plataformas que conectan directamente prestamistas y prestatarios.
+  - **Exchanges Descentralizados**: Permiten el intercambio de activos digitales sin una entidad central.
+  - **Stablecoins**: Criptomonedas cuyo valor está vinculado a activos estables, como monedas fiduciarias.
 
-### NFTs (Tokens Não Fungíveis)
+### NFTs (Tokens No Fungibles)
 
-- **Descrição**: Representação digital de propriedade de itens únicos na blockchain.
-- **Aplicações**:
-  - **Arte Digital**: Venda e leilão de obras de arte digitais.
-  - **Colecionáveis**: Cartas, itens de jogos e outros objetos de coleção digitais.
-  - **Imóveis Virtuais**: Compra e venda de propriedades em mundos virtuais.
+- **Descripción**: Representación digital de la propiedad de elementos únicos en la blockchain.
+- **Aplicaciones**:
+  - **Arte Digital**: Venta y subasta de obras de arte digitales.
+  - **Coleccionables**: Cartas, objetos de juegos y otros elementos de colección digitales.
+  - **Bienes Virtuales**: Compra y venta de propiedades en mundos virtuales.
 
-### Supply Chain (Cadeia de Suprimentos)
+### Supply Chain (Cadena de Suministro)
 
-- **Descrição**: Monitoramento e rastreamento de produtos ao longo de toda a cadeia de produção.
-- **Aplicações**:
-  - **Transparência**: Consumidores podem verificar a origem e autenticidade dos produtos.
-  - **Eficiência Logística**: Automatização de processos de envio e recebimento.
-  - **Combate à Falsificação**: Registro imutável dificulta a inserção de produtos falsos.
+- **Descripción**: Monitoreo y rastreo de productos a lo largo de toda la cadena de producción.
+- **Aplicaciones**:
+  - **Transparencia**: Los consumidores pueden verificar el origen y la autenticidad de los productos.
+  - **Eficiencia Logística**: Automatización de procesos de envío y recepción.
+  - **Lucha contra la falsificación**: El registro inmutable dificulta la inserción de productos falsificados.
 
-### Votação
+### Votación
 
-- **Descrição**: Sistemas de votação descentralizados que garantem transparência e segurança.
-- **Aplicações**:
-  - **Eleições Governamentais**: Redução de fraudes e aumento da participação.
-  - **Governança Corporativa**: Acionistas podem votar em decisões importantes.
-  - **Organizações Autônomas Descentralizadas (DAOs)**: Membros votam em propostas para a organização.
+- **Descripción**: Sistemas de votación descentralizados que garantizan transparencia y seguridad.
+- **Aplicaciones**:
+  - **Elecciones Gubernamentales**: Reducción de fraudes y aumento de la participación.
+  - **Gobernanza Corporativa**: Los accionistas pueden votar en decisiones importantes.
+  - **Organizaciones Autónomas Descentralizadas (DAO)**: Los miembros votan en propuestas para la organización.
 
-### Jogos
+### Juegos
 
-- **Descrição**: Jogos baseados em blockchain, onde ativos digitais são propriedade dos jogadores.
-- **Aplicações**:
-  - **Itens de Jogo**: Armas, skins e outros itens que podem ser trocados ou vendidos.
-  - **Economias Virtuais**: Criação de mercados dentro do jogo com valor real.
-  - **Jogos Play-to-Earn**: Jogadores ganham criptomoedas ao jogar.
+- **Descripción**: Juegos basados en blockchain, donde los activos digitales son propiedad de los jugadores.
+- **Aplicaciones**:
+  - **Elementos de Juego**: Armas, skins y otros artículos que pueden intercambiarse o venderse.
+  - **Economías Virtuales**: Creación de mercados dentro del juego con valor real.
+  - **Juegos Play-to-Earn**: Los jugadores ganan criptomonedas mientras juegan.
 
-## 4. Introdução à Solidity: A Linguagem dos Contratos Inteligentes
+## 4. Introducción a Solidity: El Lenguaje de los Contratos Inteligentes
 
-Para criar e interagir com smart contracts na Ethereum, utilizamos a linguagem **Solidity**.
+Para crear e interactuar con contratos inteligentes en Ethereum, utilizamos el lenguaje **Solidity**.
 
-### O que é Solidity?
+### ¿Qué es Solidity?
 
-- **Definição**: Uma linguagem de programação orientada a contratos, similar a JavaScript, criada especificamente para a Ethereum Virtual Machine (EVM).
+- **Definición**: Un lenguaje de programación orientado a contratos, similar a JavaScript, creado específicamente para la Ethereum Virtual Machine (EVM).
 - **Características**:
-  - **Orientada a Objetos**: Suporta herança, bibliotecas e tipos complexos.
-  - **Tipagem Estática**: Variáveis devem ser declaradas com seus tipos.
-  - **Sintaxe Familiar**: Influenciada por linguagens como C++, Python e JavaScript.
+  - **Orientado a Objetos**: Soporta herencia, bibliotecas y tipos complejos.
+  - **Tipado Estático**: Las variables deben declararse con sus tipos.
+  - **Sintaxis Familiar**: Influenciado por lenguajes como C++, Python y JavaScript.
 
-### Por que Solidity?
+### ¿Por qué Solidity?
 
-- **Integração com a Ethereum**: Projetada para tirar proveito completo das capacidades da EVM.
-- **Comunidade Ativa**: Grande número de desenvolvedores, bibliotecas e ferramentas.
-- **Oportunidades Profissionais**: Alta demanda por desenvolvedores com conhecimento em Solidity.
+- **Integración con Ethereum**: Diseñado para aprovechar al máximo las capacidades de la EVM.
+- **Comunidad Activa**: Gran cantidad de desarrolladores, bibliotecas y herramientas.
+- **Oportunidades Profesionales**: Alta demanda de desarrolladores con conocimientos en Solidity.
 
-## Conclusão
+## Conclusión
 
-Nesta aula, descobrimos o que são smart contracts e por que eles estão revolucionando diversos setores. Vimos exemplos práticos de como estão sendo aplicados em finanças, arte, logística e muito mais. Também introduzimos a Solidity, a linguagem que nos permitirá criar nossos próprios contratos inteligentes na Ethereum.
+En esta clase, descubrimos qué son los contratos inteligentes y por qué están revolucionando diversos sectores. Vimos ejemplos prácticos de cómo se aplican en finanzas, arte, logística y más. También introdujimos Solidity, el lenguaje que nos permitirá crear nuestros propios contratos inteligentes en Ethereum.
 
-Compreender esses conceitos é fundamental para avançar em nossa jornada como desenvolvedores blockchain. Nas próximas aulas, começaremos a explorar a Solidity em profundidade e a desenvolver nossos primeiros contratos inteligentes.
+Comprender estos conceptos es fundamental para avanzar en nuestro camino como desarrolladores blockchain. En las próximas clases, comenzaremos a explorar Solidity a fondo y a desarrollar nuestros primeros contratos inteligentes.
 
-## Recapitulação
+## Recapitulación
 
-1. **O que são Smart Contracts?**: Programas autoexecutáveis que automatizam acordos e processos na blockchain.
-2. **Por que os Smart Contracts são Revolucionários?**: Trazem transparência, segurança, eficiência, confiança e inovação.
-3. **Exemplos de Casos de Uso**: DeFi, NFTs, Supply Chain, Votação e Jogos demonstram a versatilidade dos smart contracts.
-4. **Introdução à Solidity**: A linguagem de programação usada para escrever contratos inteligentes na Ethereum.
+1. **¿Qué son los Contratos Inteligentes?**: Programas autoejecutables que automatizan acuerdos y procesos en la blockchain.
+2. **¿Por qué los Contratos Inteligentes son Revolucionarios?**: Aportan transparencia, seguridad, eficiencia, confianza e innovación.
+3. **Ejemplos de Casos de Uso**: DeFi, NFTs, Supply Chain, Votación y Juegos demuestran la versatilidad de los contratos inteligentes.
+4. **Introducción a Solidity**: El lenguaje de programación utilizado para escribir contratos inteligentes en Ethereum.
 
-## Lição de casa
+## Tarea
 
-Pesquise um smart contract famoso e descreva brevemente sua função.
+Investiga un contrato inteligente famoso y describe brevemente su función.
 
-## Próxima aula
+## Próxima clase
 
-Na próxima aula vamos ter uma definição conceitual do que é blockchain.
+En la próxima clase tendremos una definición conceptual de qué es la blockchain.

@@ -11,6 +11,8 @@
 3. La Máquina Virtual de Ethereum (EVM)
 4. Componentes y Funcionamiento de la EVM
 
+---
+
 ## 1. Mecanismos de Consenso en la Blockchain
 
 ### ¿Qué es el Consenso?

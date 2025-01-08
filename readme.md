@@ -35,7 +35,7 @@ En 2023, gané cinco hackatones internacionales en el ecosistema de Ethereum, en
 [Clase 3: Consenso, Estado y la Máquina Virtual de Ethereum (EVM)](modulo_1_que_es_blockchain/clase_3/clase_3.md)
 [Clase 4: Cuentas: Conceptos Fundamentales](modulo_1_que_es_blockchain/clase_4/clase_4.md)
 [Clase 5: Criptografía: Claves Públicas y Privadas, y Firmas Digitales](modulo_1_que_es_blockchain/clase_5/clase_5.md)
-[Clase 6: Tu Primera Wallet](modulo_1_que_es_blockchain/clase_6/clase_6.md)
+[Clase 6: Tu Primer Wallet](modulo_1_que_es_blockchain/clase_6/clase_6.md)
 [Clase 7: Introducción a los Smart Contracts](modulo_1_que_es_blockchain/clase_7/clase_7.md)
 [Clase 8: ¿Qué es Blockchain?](modulo_1_que_es_blockchain/clase_8/clase_8.md)
 

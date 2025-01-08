@@ -1,59 +1,58 @@
-# Aula 8: **O que é Blockchain?**
+# Clase 8: **¿Qué es Blockchain?**
 
-## Abertura
+## Apertura
 
-Olá! Bem-vindo à oitava aula do nosso curso de Solidity para iniciantes. Nas aulas anteriores, exploramos diversos aspectos da blockchain e dos contratos inteligentes. Hoje, vamos fazer uma breve consolidação para definir claramente o que é **blockchain**. Esta aula será curta, mas fundamental para reforçar nosso entendimento antes de avançarmos para tópicos mais complexos.
+¡Hola! Bienvenido a la octava clase de nuestro curso de Solidity para principiantes. En las clases anteriores, exploramos diversos aspectos de la blockchain y los contratos inteligentes. Hoy, haremos una breve consolidación para definir claramente qué es **blockchain**. Esta clase será corta, pero fundamental para reforzar nuestra comprensión antes de avanzar a temas más complejos.
 
-### Programação:
+### Programa:
 
-1. Definição de Blockchain
+1. Definición de Blockchain
 
 ---
 
-## 1. Definição de Blockchain
+## 1. Definición de Blockchain
 
-A blockchain é um tipo específico de tecnologia de registro distribuído (DLT - Distributed Ledger Technology). Trata-se de um sistema que permite que computadores em diferentes locais proponham, validem transações e atualizem registros de forma sincronizada através de uma rede. Diferentemente de bancos de dados distribuídos tradicionais, que geralmente dependem de uma autoridade central para manter a consistência dos registros, a blockchain opera sem a necessidade de um administrador central confiável.
+Blockchain es un tipo específico de tecnología de registro distribuido (DLT, por sus siglas en inglés: Distributed Ledger Technology). Se trata de un sistema que permite que computadoras en diferentes ubicaciones propongan, validen transacciones y actualicen registros de manera sincronizada a través de una red. A diferencia de las bases de datos distribuidas tradicionales, que generalmente dependen de una autoridad central para mantener la consistencia de los registros, blockchain funciona sin la necesidad de un administrador central confiable.
 
-Em sistemas como o Bitcoin e o Ethereum, a blockchain mantém um registro distribuído de maneira descentralizada usando procedimentos de validação baseados em consenso e assinaturas criptográficas. As transações são realizadas de forma peer-to-peer (ponto a ponto) e são transmitidas para todos os participantes, que trabalham para validá-las em lotes conhecidos como "blocos". Como o registro de atividades é organizado em blocos separados, mas conectados, esse tipo de DLT é frequentemente chamado de "tecnologia de blockchain".
+En sistemas como Bitcoin y Ethereum, blockchain mantiene un registro distribuido de manera descentralizada utilizando procedimientos de validación basados en consenso y firmas criptográficas. Las transacciones se realizan de manera peer-to-peer (de punto a punto) y son transmitidas a todos los participantes, quienes trabajan para validarlas en lotes conocidos como "bloques". Como el registro de actividades se organiza en bloques separados pero conectados, este tipo de DLT a menudo se denomina "tecnología blockchain".
 
+### Componentes Principales:
 
-### Componentes Principais:
+- **Bloques**: Unidades que contienen un conjunto de transacciones o información. Cada bloque tiene un identificador único llamado hash.
+- **Cadena de Bloques**: Cada bloque está vinculado al anterior a través de su hash, formando una cadena continua e inalterable.
+- **Nodos**: Computadoras que participan en la red, manteniendo una copia completa de la blockchain y validando nuevas transacciones.
+- **Mecanismos de Consenso**: Protocolos que permiten que los nodos acuerden sobre el estado actual de la blockchain (por ejemplo, Proof-of-Work, Proof-of-Stake).
 
-- **Blocos**: Unidades que contêm um conjunto de transações ou informações. Cada bloco possui um identificador único chamado de hash.
-- **Cadeia de Blocos**: Cada bloco está ligado ao anterior através do hash, formando uma cadeia contínua e inalterável.
-- **Nodos (Nós)**: Computadores que participam da rede, mantendo uma cópia completa da blockchain e validando novas transações.
-- **Mecanismos de Consenso**: Protocolos que permitem que os nodos concordem sobre o estado atual da blockchain (ex: Proof-of-Work, Proof-of-Stake).
+### Características Fundamentales:
 
-### Características Fundamentais:
+- **Descentralización**: Los datos no están controlados por una única entidad; en su lugar, están distribuidos entre todos los nodos de la red.
+- **Inmutabilidad**: Una vez que los datos son registrados en un bloque y añadidos a la blockchain, no pueden ser modificados ni eliminados.
+- **Transparencia**: Todas las transacciones son visibles para los participantes de la red, lo que aumenta la confianza y la responsabilidad.
+- **Seguridad**: La criptografía avanzada protege las transacciones e impide modificaciones no autorizadas.
 
-- **Descentralização**: Os dados não são controlados por uma única entidade; em vez disso, são distribuídos por todos os nodos da rede.
-- **Imutabilidade**: Uma vez que os dados são registrados em um bloco e adicionados à blockchain, eles não podem ser alterados ou excluídos.
-- **Transparência**: Todas as transações são visíveis para os participantes da rede, aumentando a confiança e a responsabilidade.
-- **Segurança**: A criptografia avançada protege as transações e impede alterações não autorizadas.
+### ¿Cómo Funciona Blockchain?
 
-### Como Funciona a Blockchain:
+1. **Transacción**: Se crea una nueva transacción y se transmite a la red.
+2. **Validación**: Los nodos verifican si la transacción es válida según las reglas del protocolo.
+3. **Agrupación en Bloques**: Las transacciones válidas se agrupan en un bloque.
+4. **Prueba de Consenso**: El bloque es validado mediante un mecanismo de consenso.
+5. **Añadido a la Cadena**: Una vez validado, el bloque se añade a la blockchain, y la copia actualizada se distribuye a todos los nodos.
+6. **Registro Permanente**: La transacción ahora forma parte del registro permanente y puede ser visualizada por cualquier participante.
 
-1. **Transação**: Uma nova transação é criada e transmitida para a rede.
-2. **Validação**: Os nodos verificam se a transação é válida de acordo com as regras do protocolo.
-3. **Agrupamento em Blocos**: Transações válidas são agrupadas em um bloco.
-4. **Prova de Consenso**: O bloco é validado por meio de um mecanismo de consenso.
-5. **Adição à Cadeia**: Uma vez validado, o bloco é adicionado à blockchain, e a cópia atualizada é distribuída a todos os nodos.
-6. **Registro Permanente**: A transação agora faz parte do registro permanente e pode ser visualizada por qualquer participante.
+### Importancia de Blockchain:
 
-### Importância da Blockchain:
+- **Eliminación de Intermediarios**: Permite transacciones directas entre partes, reduciendo costos y aumentando la eficiencia.
+- **Confianza en Sistemas Sin Confianza**: Proporciona un entorno seguro donde participantes desconocidos pueden interactuar sin necesidad de confiar entre sí.
+- **Innovación Tecnológica**: Base para el desarrollo de criptomonedas, contratos inteligentes y aplicaciones descentralizadas (dApps).
 
-- **Eliminação de Intermediários**: Permite transações diretas entre partes, reduzindo custos e aumentando a eficiência.
-- **Confiança em Sistemas Sem Confiança**: Fornece um ambiente seguro onde participantes desconhecidos podem interagir sem precisar confiar uns nos outros.
-- **Inovação Tecnológica**: Base para o desenvolvimento de criptomoedas, contratos inteligentes e aplicações descentralizadas (dApps).
+## Conclusión
 
-## Conclusão
+En esta clase, consolidamos el concepto de blockchain, comprendiendo su definición y los componentes fundamentales. Entendimos cómo blockchain funciona como una tecnología revolucionaria que está transformando diversos sectores, más allá de las finanzas, gracias a su capacidad para proporcionar seguridad, transparencia y descentralización.
 
-Nesta aula, consolidamos o conceito de blockchain, entendendo sua definição e componentes fundamentais. Compreendemos como a blockchain funciona como uma tecnologia revolucionária que está transformando diversos setores além das finanças, graças à sua capacidade de proporcionar segurança, transparência e descentralização.
+## Recapitulación
 
-## Recapitulação
+1. **Definición de Blockchain**: Una tecnología de registro distribuido, inmutable y transparente que permite transacciones seguras sin intermediarios.
 
-1. **Definição de Blockchain**: Uma tecnologia de registro distribuído, imutável e transparente que permite transações seguras sem intermediários.
+## Próximo módulo
 
-## Próxima módulo
-
-No próximo módulo vamos apresentar as ferramentas necessárias para você desenvolver com Solidity.
+En el próximo módulo, presentaremos las herramientas necesarias para que puedas desarrollar con Solidity.

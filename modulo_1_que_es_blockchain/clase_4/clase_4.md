@@ -1,4 +1,4 @@
-# Clase 4: **Cuentas: Conceptos Fundamentales**
+# Clase 4: **Cuentas - Conceptos Fundamentales**
 
 ## Apertura
 

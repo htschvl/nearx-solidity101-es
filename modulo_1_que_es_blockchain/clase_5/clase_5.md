@@ -2,7 +2,7 @@
 
 ## Apertura
 
-¡Hola! Bienvenido a la quinta clase de nuestro curso de Solidity para principiantes. En las lecciones anteriores, exploramos los conceptos fundamentales de las cuentas en Ethereum y cómo funcionan en la blockchain. Hoy, profundizaremos en un tema esencial para la seguridad y el funcionamiento de la blockchain: **la criptografía**. Entenderemos cómo funcionan las claves públicas y privadas, y el papel de las firmas digitales en la autenticación y la integridad de las transacciones.
+¡Hola! Bienvenido a la quinta clase de nuestro curso de Solidity para principiantes. En las clases anteriores, exploramos los conceptos fundamentales de las cuentas en Ethereum y cómo funcionan en la blockchain. Hoy, profundizaremos en un tema esencial para la seguridad y el funcionamiento de la blockchain: **la criptografía**. Entenderemos cómo funcionan las claves públicas y privadas, y el papel de las firmas digitales en la autenticación y la integridad de las transacciones.
 
 ### Programa:
 

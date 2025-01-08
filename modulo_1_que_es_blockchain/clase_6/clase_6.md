@@ -11,6 +11,7 @@
 3. Usando Faucets y Realizando tu Primera Transacción
 4. Seguridad y Mejores Prácticas
 
+---
 
 ## 1. ¿Qué es un Wallet?
 

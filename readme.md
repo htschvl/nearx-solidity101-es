@@ -1,12 +1,11 @@
 # Solidity 101
 
-
 # NearX
-Se você ainda não entendeu, a NearX é um ecosistema de aprendizagem com uma comunidade de mais de 2.000 alunos.
+Si aún no lo has entendido, NearX es un ecosistema de aprendizaje con una comunidad de más de 2,000 estudiantes.
 
-Nós produzimos bootcamps, hackathons, mentorias, dojos e aceleração de carreiras.
+Producimos bootcamps, hackatones, mentorías, dojos y programas de aceleración de carreras.
 
-Já fizemos parcerias com:
+Hemos colaborado con:
 
 Animoca Brands
 Stellar
@@ -18,21 +17,22 @@ Starknet
 
 [Vinicius Chagas](https://www.linkedin.com/in/viniciushenriquechagas/)
 
-Sou Fundador e CEO da HOUS3, que é uma fábrica de software focada na nova economia digital. Participei da primeira e segunda emissão de um Security Token do Brasil, no valor de 82 milhões de reais, em 2021. Sou Pesquisador e Desenvolvedor Blockchain no Programa Ilíada, um projeto do Governo Federal. Sou professor do MBA em Digital Finance do Ibmec e também de cursos sobre a tecnologia blockchain e tokenização para instituições como Abcripto, Banco Central do Brasil, Comissão de Valores Mobiliários, e aqui nesse nosso curso. Venci 5 Hackathons internacionais no ano de 2023 no ecossistema do Ethereum, em países como Argentina, Cingapura. Sou formado em Direito e Análise de Sistemas, com especialização em Arquitetura de Soluções e Arquitetura de Software. 
+Soy Fundador y CEO de HOUS3, una fábrica de software enfocada en la nueva economía digital. Participé en la primera y segunda emisión de un Security Token en Brasil, por un valor de 82 millones de reales en 2021. También soy Investigador y Desarrollador Blockchain en el Programa Ilíada, un proyecto del Gobierno Federal. Soy profesor del MBA en Digital Finance en el Ibmec y de cursos sobre tecnología blockchain y tokenización para instituciones como Abcripto, el Banco Central de Brasil, la Comisión de Valores Mobiliarios y, por supuesto, en este curso.
 
+En 2023, gané cinco hackatones internacionales en el ecosistema de Ethereum, en países como Argentina y Singapur. Poseo formación en Derecho y Análisis de Sistemas, con especialización en Arquitectura de Soluciones y Arquitectura de Software.
 
-**Módulo Extra: Como usar IA para estudar**
-- Como usar a Fênix nos seus estudos?
+**Módulo Extra: Cómo usar la IA para estudiar**
+- ¿Cómo usar Fênix en tus estudios?
 
-# Módulo 1: O que é Blockchain?
+# Módulo 1: ¿Qué es Blockchain?
 
-- [Aula 2: Explorando o Block Explorer: Transações, Blocos e Gas](modulo_1_o_que_e_blockchain/aula_2/aula_2.md)
-- [Aula 3: Consenso, Estado e a Máquina Virtual Ethereum (EVM)](modulo_1_o_que_e_blockchain/aula_3/aula_3.md)
-- [Aula 4: Contas: Conceitos Fundamentais](modulo_1_o_que_e_blockchain/aula_4/aula_4.md)
-- [Aula 5: Criptografia: Chaves Públicas e Privadas, e Assinaturas Digitais](modulo_1_o_que_e_blockchain/aula_5/aula_5.md)
-- [Aula 6: Sua Primeira Wallet](modulo_1_o_que_e_blockchain/aula_6/aula_6.md)
-- [Aula 7: Introdução aos Smart Contracts](modulo_1_o_que_e_blockchain/aula_7/aula_7.md)
-- [Aula 8: O que é Blockchain?](modulo_1_o_que_e_blockchain/aula_8/aula_8.md)
+[Clase 2: Explorando el Block Explorer: Transacciones, Bloques y Gas](modulo_1_que_es_blockchain/clase_2/clase_2.md)
+[Clase 3: Consenso, Estado y la Máquina Virtual de Ethereum (EVM)]
+[Clase 4: Cuentas: Conceptos Fundamentales]
+[Clase 5: Criptografía: Claves Públicas y Privadas, y Firmas Digitales]
+[Clase 6: Tu Primera Wallet]
+[Clase 7: Introducción a los Smart Contracts]
+[Clase 8: ¿Qué es Blockchain?]
 
 # Módulo 2: Ferramentas
 

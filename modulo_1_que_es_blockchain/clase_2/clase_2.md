@@ -135,5 +135,3 @@ Accede a Etherscan y encuentra una transacción reciente. Identifica el remitent
 En la próxima clase, profundizaremos en el funcionamiento de la Máquina Virtual de Ethereum que ejecuta nuestro código producido en Solidity.
 
 ---
-
-Este é o texto traduzido com as modificações necessárias.

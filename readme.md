@@ -1,19 +1,22 @@
+
+---
+
 # Solidity 101
 
-# NearX
+## NearX
 Si aún no lo has entendido, NearX es un ecosistema de aprendizaje con una comunidad de más de 2,000 estudiantes.
 
 Producimos bootcamps, hackatones, mentorías, dojos y programas de aceleración de carreras.
 
 Hemos colaborado con:
 
-Animoca Brands
-Stellar
-Optimism
-Arbitrum
-Starknet
+- Animoca Brands
+- Stellar
+- Optimism
+- Arbitrum
+- Starknet
 
-# Conheça o Instrutor
+## Conoce al Instructor
 
 [Vinicius Chagas](https://www.linkedin.com/in/viniciushenriquechagas/)
 
@@ -21,13 +24,17 @@ Soy Fundador y CEO de HOUS3, una fábrica de software enfocada en la nueva econo
 
 En 2023, gané cinco hackatones internacionales en el ecosistema de Ethereum, en países como Argentina y Singapur. Poseo formación en Derecho y Análisis de Sistemas, con especialización en Arquitectura de Soluciones y Arquitectura de Software.
 
-**Módulo Extra: Cómo usar la IA para estudiar**
+**Módulo Extra: Cómo usar la IA para estudiar**  
 - ¿Cómo usar Fênix en tus estudios?
 
-# Módulo 1: ¿Qué es Blockchain?
+## Módulo 1: ¿Qué es Blockchain?
+
+--- 
+
+Esse é o texto traduzido com as modificações necessárias.
 
 [Clase 2: Explorando el Block Explorer: Transacciones, Bloques y Gas](modulo_1_que_es_blockchain/clase_2/clase_2.md)
-[Clase 3: Consenso, Estado y la Máquina Virtual de Ethereum (EVM)]
+[Clase 3: Consenso, Estado y la Máquina Virtual de Ethereum (EVM)](modulo_1_que_es_blockchain/clase_3/clase_3.md)
 [Clase 4: Cuentas: Conceptos Fundamentales]
 [Clase 5: Criptografía: Claves Públicas y Privadas, y Firmas Digitales]
 [Clase 6: Tu Primera Wallet]

@@ -1,160 +1,150 @@
-# Aula 3: **Consenso, Estado e a Máquina Virtual Ethereum (EVM)**
+# Clase 3: **Consenso, Estado y la Máquina Virtual de Ethereum (EVM)**
 
-## Abertura
+## Apertura
 
-Olá! Bem-vindo à terceira aula do nosso curso de Solidity para iniciantes. Nas aulas anteriores, exploramos o block explorer e entendemos os fundamentos do Ethereum e dos contratos inteligentes. Hoje, vamos aprofundar nosso conhecimento nos pilares fundamentais que sustentam a rede Ethereum: o consenso, o estado e a Máquina Virtual Ethereum (EVM). Esses conceitos são essenciais para entender como a blockchain funciona e como os contratos inteligentes são executados.
+¡Hola! Bienvenido a la tercera clase de nuestro curso de Solidity para principiantes. En las clases anteriores, exploramos el block explorer y comprendimos los fundamentos de Ethereum y los contratos inteligentes. Hoy, profundizaremos en los pilares fundamentales que sustentan la red Ethereum: el consenso, el estado y la Máquina Virtual de Ethereum (EVM). Estos conceptos son esenciales para entender cómo funciona la blockchain y cómo se ejecutan los contratos inteligentes.
 
-### Programação:
+### Programación:
 
-1. Mecanismos de Consenso na Blockchain
-2. O Conceito de Estado na Ethereum
-3. A Máquina Virtual Ethereum (EVM)
-4. Componentes e Funcionamento da EVM
+1. Mecanismos de Consenso en la Blockchain
+2. El Concepto de Estado en Ethereum
+3. La Máquina Virtual de Ethereum (EVM)
+4. Componentes y Funcionamiento de la EVM
 
----
+## 1. Mecanismos de Consenso en la Blockchain
 
-## 1. Mecanismos de Consenso na Blockchain
+### ¿Qué es el Consenso?
 
-### O que é Consenso?
+El **consenso** en la blockchain es el acuerdo general entre los nodos de la red sobre el estado actual y la validez de las transacciones. Es el proceso que asegura que todas las partes de la red estén sincronizadas y de acuerdo con la secuencia de bloques añadidos a la blockchain.
 
-O **consenso** na blockchain é o acordo geral entre os nós da rede sobre o estado atual e a validade das transações. É o processo que garante que todas as partes da rede estejam sincronizadas e concordem com a sequência de blocos adicionados à blockchain.
+> **Definición:** Mecanismo por el cual los participantes de la red acuerdan una única versión de la verdad, asegurando la integridad y seguridad de la blockchain.
 
-> **Definição:** Mecanismo pelo qual os participantes da rede concordam sobre uma única versão da verdade, assegurando a integridade e a segurança da blockchain.
+### Importancia del Consenso
 
-### Importância do Consenso
+- **Integridad de la Red**: Asegura que todos los nodos tengan la misma información, evitando discrepancias.
+- **Seguridad**: Protege la red contra ataques y intentos de fraude.
+- **Inmutabilidad**: Una vez que un bloque se añade, no puede ser alterado sin el consenso de la mayoría.
 
-- **Integridade da Rede**: Garante que todos os nós tenham a mesma informação, evitando divergências.
-- **Segurança**: Protege a rede contra ataques e tentativas de fraude.
-- **Imutabilidade**: Uma vez que um bloco é adicionado, não pode ser alterado sem o consenso da maioria.
+### ¿Cómo Funciona el Consenso?
 
-### Como Funciona o Consenso?
+Existen dos pasos principales en el proceso de consenso:
 
-Existem dois principais passos no processo de consenso:
+1. **Decidir Quién Producirá y Propondrá el Bloque**:
+   - Se utilizan mecanismos como Proof-of-Work (PoW) o Proof-of-Stake (PoS) para seleccionar al productor del siguiente bloque.
+   - **Objetivo**: Garantizar que la selección sea justa e impedir que un solo participante controle la red.
 
-1. **Decidir Quem Vai Produzir e Propor o Bloco**:
-   - Utiliza mecanismos como Proof-of-Work (PoW) ou Proof-of-Stake (PoS) para selecionar o produtor do próximo bloco.
-   - **Objetivo**: Garantir que a escolha seja justa e impedir que um único participante controle a rede.
+2. **Aceptación del Bloque por los Otros Nodos**:
+   - Después de la creación, el bloque se propaga a los otros nodos para su validación.
+   - Si la mayoría acepta el bloque, se añade a la blockchain.
 
-2. **Aceitação do Bloco pelos Demais Nós**:
-   - Após a criação, o bloco é propagado para os outros nós para validação.
-   - Se a maioria aceitar o bloco, ele é adicionado à blockchain.
+> **Nota:** El consenso previene ataques Sybil, en los que un solo agente intenta asumir múltiples identidades para controlar la red.
 
-> **Nota:** O consenso impede ataques Sybil, nos quais um único agente tenta assumir múltiplas identidades para controlar a rede.
+### Mecanismos de Consenso en Ethereum
 
-### Mecanismos de Consenso no Ethereum
+#### Proof-of-Work (PoW): El Antiguo Mecanismo
 
-#### Proof-of-Work (PoW): O Antigo Mecanismo
+- **Creación de Bloques**: Los mineros competían para resolver problemas matemáticos complejos (hashing) para crear nuevos bloques.
+- **Recompensa**: El primero en resolver el problema añadía el bloque y recibía una recompensa en ETH.
+- **Seguridad**: La seguridad estaba garantizada por la necesidad de controlar el 51% del poder computacional de la red, lo cual era extremadamente costoso.
 
-- **Criação de Blocos**: Mineradores competiam para resolver problemas matemáticos complexos (hashing) para criar novos blocos.
-- **Recompensa**: O primeiro a resolver o problema adicionava o bloco e recebia uma recompensa em ETH.
-- **Segurança**: A segurança era garantida pela necessidade de controlar 51% do poder computacional da rede, o que é extremamente custoso.
+#### Proof-of-Stake (PoS): El Actual Mecanismo
 
-#### Proof-of-Stake (PoS): O Atual Mecanismo
+- **Creación de Bloques**: Los validadores son seleccionados aleatoriamente para proponer nuevos bloques, basándose en la cantidad de ETH en stake (garantía).
+- **Recompensa**: Los validadores honestos reciben recompensas por validar y proponer bloques correctamente.
+- **Seguridad**: Los ataques son desalentados, ya que los validadores pueden perder su stake en caso de comportamiento malicioso.
 
-- **Criação de Blocos**: Validadores são selecionados aleatoriamente para propor novos blocos, baseados na quantidade de ETH em stake (garantia).
-- **Recompensa**: Validadores honestos recebem recompensas por validar e propor blocos corretamente.
-- **Segurança**: Ataques são desencorajados, pois os validadores podem perder seu stake em caso de comportamento malicioso.
-
-> **Benefícios do PoS**:
+> **Beneficios del PoS**:
 >
-> - **Eficiência Energética**: Consome menos energia que o PoW.
-> - **Descentralização**: Facilita a participação de mais validadores.
-> - **Segurança Econômica**: Ataques se tornam financeiramente inviáveis.
+> - **Eficiencia Energética**: Consume menos energía que el PoW.
+> - **Descentralización**: Facilita la participación de más validadores.
+> - **Seguridad Económica**: Los ataques se vuelven financieramente inviables.
 
-## 2. O Conceito de Estado na Ethereum
+## 2. El Concepto de Estado en Ethereum
 
-### O que é Estado?
+### ¿Qué es Estado?
 
-O **estado** na Ethereum representa a condição atual da rede em um determinado momento, incluindo saldos de contas, armazenamento de contratos inteligentes e outros dados persistentes.
+El **estado** en Ethereum representa la condición actual de la red en un momento determinado, incluyendo saldos de cuentas, almacenamiento de contratos inteligentes y otros datos persistentes.
 
-> **Definição:** Fotografia do sistema que reflete todas as informações e dados armazenados na blockchain naquele instante.
+> **Definición:** Fotografía del sistema que refleja toda la información y los datos almacenados en la blockchain en ese momento.
 
-### Armazenamento do Estado
+### Almacenamiento del Estado
 
-- **Saldos de Contas**: Quantidade de ETH que cada endereço possui.
-- **Contratos Inteligentes**: Código e armazenamento interno dos contratos.
-- **Dados Persistentes**: Informações que precisam ser mantidas entre transações.
+- **Saldos de Cuentas**: Cantidad de ETH que cada dirección posee.
+- **Contratos Inteligentes**: Código y almacenamiento interno de los contratos.
+- **Datos Persistentes**: Información que debe ser mantenida entre transacciones.
 
-### Mudanças de Estado
+### Cambios de Estado
 
-- O estado é alterado através de **transações** que executam operações, como transferências de ETH ou chamadas a contratos inteligentes.
-- Cada transação válida resulta em uma atualização do estado global da rede.
+- El estado se altera a través de **transacciones** que ejecutan operaciones, como transferencias de ETH o llamadas a contratos inteligentes.
+- Cada transacción válida resulta en una actualización del estado global de la red.
 
-### Papel da EVM no Estado
+### Papel de la EVM en el Estado
 
-A **Máquina Virtual Ethereum (EVM)** processa as transações e aplica as mudanças necessárias ao estado, garantindo que cada nó na rede tenha uma cópia atualizada e consistente.
+La **Máquina Virtual Ethereum (EVM)** procesa las transacciones y aplica los cambios necesarios al estado, garantizando que cada nodo en la red tenga una copia actualizada y consistente.
 
-## 3. A Máquina Virtual Ethereum (EVM)
+## 3. La Máquina Virtual de Ethereum (EVM)
 
-### O que é a EVM?
+### ¿Qué es la EVM?
 
-A **Máquina Virtual Ethereum (EVM)** é o ambiente de execução dos contratos inteligentes na Ethereum. Ela é responsável por interpretar e executar o bytecode dos contratos inteligentes.
+La **Máquina Virtual de Ethereum (EVM)** es el entorno de ejecución de los contratos inteligentes en Ethereum. Es responsable de interpretar y ejecutar el bytecode de los contratos inteligentes.
 
-> **Definição:** Uma máquina virtual Turing Completa que permite a execução de código arbitrário, desde que haja gas suficiente para pagar pela computação.
+> **Definición:** Una máquina virtual Turing Completa que permite la ejecución de código arbitrario, siempre y cuando haya gas suficiente para pagar por la computación.
 
-### Características da EVM
+### Características de la EVM
 
-- **Turing Completa**: Capaz de executar qualquer cálculo computacional, dado recursos suficientes.
-- **Isolamento**: Executa contratos em um ambiente isolado, garantindo a segurança da rede.
-- **Determinística**: Garante que, dada uma entrada específica, o resultado será sempre o mesmo em todos os nós.
+- **Turing Completa**: Capaz de ejecutar cualquier cálculo computacional, dado los recursos suficientes.
+- **Aislamiento**: Ejecuta contratos en un entorno aislado, garantizando la seguridad de la red.
+- **Determinística**: Garantiza que, dada una entrada específica, el resultado siempre será el mismo en todos los nodos.
 
-### Gas na EVM
+### Gas en la EVM
 
-- O **gas** é a unidade de medida do esforço computacional na EVM.
-- Cada operação tem um custo em gas, que deve ser pago pelo remetente da transação.
-- O gas impede loops infinitos e uso excessivo de recursos, garantindo que os contratos sejam executados de forma eficiente.
+- El **gas** es la unidad de medida del esfuerzo computacional en la EVM.
+- Cada operación tiene un costo en gas, que debe ser pagado por el remitente de la transacción.
+- El gas impide bucles infinitos y el uso excesivo de recursos, garantizando que los contratos se ejecuten de manera eficiente.
 
-## 4. Componentes e Funcionamento da EVM
+## 4. Componentes y Funcionamiento de la EVM
 
-### Funcionamento da EVM
+### Funcionamiento de la EVM
 
-1. **Leitura e Verificação da Transação**: A EVM recebe a transação e verifica sua validade e assinatura.
-2. **Inicialização com o Código do Contrato**: Carrega o bytecode do contrato inteligente a ser executado.
-3. **Execução Passo a Passo do Código**: Interpreta cada instrução (opcode) e executa as operações correspondentes.
-4. **Cálculo e Dedução do Gas**: Calcula o gas consumido por cada operação e deduz do total fornecido.
-5. **Atualização do Estado**: Aplica as mudanças resultantes da execução ao estado global.
-6. **Retorno de Resultados**: Fornece a saída ou resultado da execução, se aplicável.
+1. **Lectura y Verificación de la Transacción**: La EVM recibe la transacción y verifica su validez y firma.
+2. **Inicialización con el Código del Contrato**: Carga el bytecode del contrato inteligente que se va a ejecutar.
+3. **Ejecución Paso a Paso del Código**: Interpreta cada instrucción (opcode) y ejecuta las operaciones correspondientes.
+4. **Cálculo y Deducción del Gas**: Calcula el gas consumido por cada operación y lo deduce del total proporcionado.
+5. **Actualización del Estado**: Aplica los cambios resultantes de la ejecución al estado global.
+6. **Devolución de Resultados**: Proporciona la salida o el resultado de la ejecución, si es aplicable.
 
-### Componentes Principais da EVM
+### Componentes Principales de la EVM
 
-- **Storage**: Armazenamento permanente utilizado pelos contratos para guardar dados entre transações. É específico por contrato e persiste na blockchain.
-- **Memory**: Memória temporária utilizada durante a execução de uma transação. É limpa após a conclusão da execução.
-- **Stack**: Pilha de dados usada para operações temporárias e passagem de argumentos entre instruções.
-- **Code**: O bytecode do contrato inteligente que está sendo executado.
-- **Args (Argumentos)**: Dados de entrada fornecidos à função ou contrato que está sendo chamado.
+- **Storage**: Almacenamiento permanente utilizado por los contratos para guardar datos entre transacciones. Es específico por contrato y persiste en la blockchain.
+- **Memory**: Memoria temporal utilizada durante la ejecución de una transacción. Se limpia después de completar la ejecución.
+- **Stack**: Pila de datos usada para operaciones temporarias y para pasar argumentos entre instrucciones.
+- **Code**: El bytecode del contrato inteligente que se está ejecutando.
+- **Args (Argumentos)**: Datos de entrada proporcionados a la función o contrato que se está llamando.
 
 ### Opcodes
 
-- **Definição**: Instruções básicas que a EVM pode executar, como operações aritméticas, lógicas, acesso a armazenamento, etc.
-- **Exemplos**:
-  - `ADD`: Soma dois valores.
-  - `SSTORE`: Armazena um valor no storage.
-  - `CALL`: Chama outra função ou contrato.
+- **Definición**: Instrucciones básicas que la EVM puede ejecutar, como operaciones aritméticas, lógicas, acceso al almacenamiento, etc.
+- **Ejemplos**:
+  - `ADD`: Suma dos valores.
+  - `SSTORE`: Almacena un valor en el storage.
+  - `CALL`: Llama a otra función o contrato.
 
-> **Nota:** O conhecimento dos opcodes é avançado, mas entender que cada linha de código Solidity é compilada em uma sequência de opcodes ajuda a otimizar e escrever contratos mais eficientes.
+> **Nota:** El conocimiento de los opcodes es avanzado, pero entender que cada línea de código Solidity se compila en una secuencia de opcodes ayuda a optimizar y escribir contratos más eficientes.
 
-## Conclusão
+## Conclusión
 
-Nesta aula, exploramos os conceitos fundamentais que permitem o funcionamento da Ethereum:
+En esta lección, exploramos los conceptos fundamentales que permiten el funcionamiento de Ethereum:
 
-- Compreendemos como o **consenso** mantém a rede segura e confiável.
-- Aprendemos sobre o **estado**, que representa as informações atuais da blockchain.
-- Conhecemos a **EVM**, o ambiente onde os contratos inteligentes são executados.
-- Detalhamos os **componentes e o funcionamento da EVM**, essenciais para a execução correta e eficiente dos contratos.
+- Comprendimos cómo el **consenso** mantiene la red segura y confiable.
+- Aprendimos sobre el **estado**, que representa la información actual de la blockchain.
+- Conocimos la **EVM**, el entorno donde se ejecutan los contratos inteligentes.
+- Detallamos los **componentes y el funcionamiento de la EVM**, esenciales para la ejecución correcta y eficiente de los contratos.
 
-Esses conceitos são cruciais para qualquer desenvolvedor que deseja criar contratos inteligentes seguros e eficientes na rede Ethereum.
+Estos conceptos son cruciales para cualquier desarrollador que desee crear contratos inteligentes seguros y eficientes en la red Ethereum.
 
-## Recapitulação
+## Recapitulación
 
-1. **Mecanismos de Consenso na Blockchain**: O acordo entre os nós sobre o estado da rede, garantindo integridade e segurança.
-2. **O Conceito de Estado na Ethereum**: Representa a condição atual da blockchain, incluindo saldos e dados de contratos.
-3. **A Máquina Virtual Ethereum (EVM)**: Ambiente de execução dos contratos inteligentes, capaz de executar código arbitrário.
-4. **Componentes e Funcionamento da EVM**: Como a EVM processa transações, gerencia memória e atualiza o estado.
-
-## Lição de casa
-
-Investigue como os opcodes afetam o consumo de gas e escreva um breve resumo sobre como otimizar um contrato inteligente considerando os opcodes utilizados.
-
-## Próxima aula
-
-Na próxima aula, vamos falar sobre as wallets!
+1. **Mecanismos de Consenso en la Blockchain**: El acuerdo entre los nodos sobre el estado de la red, garantizando integridad y seguridad.
+2. **El Concepto de Estado en Ethereum**: Representa la condición actual de la blockchain, incluidos saldos y datos de contratos.
+3. **La Máquina Virtual Ethereum (EVM)**: Entorno de ejecución de los contratos inteligentes, capaz de ejecutar código arbitrario.
+4. **Componentes y Funcionamiento de la EVM**: Elementos clave como el almacenamiento, memoria, pila y opcodes.

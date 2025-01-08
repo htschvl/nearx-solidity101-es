@@ -1,10 +1,13 @@
+
+---
+
 # Clase 2: Explorando el Block Explorer: Transacciones, Bloques y Gas
 
 ## Introducción
 
 ¡Hola! Bienvenido a nuestra primera clase del curso de Solidity para principiantes. En esta clase, comenzaremos a explorar el mundo de la blockchain utilizando una herramienta esencial: el block explorer. Con esta herramienta, entenderemos cómo funcionan las transacciones, los bloques y el concepto de gas en la red Ethereum. Vamos juntos a desentrañar estos conceptos fundamentales que son la base para cualquier desarrollador en blockchain.
 
-### Agenda:
+### Programación:
 
 1. ¿Qué es un Block Explorer y cuál es su utilidad?
 2. Transacciones en la Blockchain
@@ -22,8 +25,7 @@ Un **block explorer** es una herramienta en línea que permite visualizar, busca
 
 - **Transparencia**: Permite que cualquier persona verifique transacciones y actividades en la red.
 - **Monitoreo**: Sigue el estado de tus transacciones o contratos inteligentes.
-*- *Análisis**: Obtén información sobre el rendimiento de la red, tarifas de gas y actividades de cuentas específicas.
-
+- **Análisis**: Obtén información sobre el rendimiento de la red, tarifas de gas y actividades de cuentas específicas.
 
 ### Ejemplos de Block Explorers Populares:
 
@@ -46,7 +48,7 @@ Una **transacción** es la transferencia de valor o datos en la blockchain, inic
 - **Nonce**: Un contador secuencial que indica el número de transacción de la cuenta, evitando duplicados.  
 - **Gas Price**: El precio que el remitente está dispuesto a pagar por unidad de gas, generalmente medido en Gwei.  
 - **Gas Limit**: La cantidad máxima de gas que la transacción está autorizada a consumir.  
-- **Signature**: La firma digital que autentica la transacción, generada a partir de la clave privada del remitente.  
+- **Firma**: La firma digital que autentica la transacción, generada a partir de la clave privada del remitente.  
 
 > **Importante:** El gas es fundamental para el funcionamiento de la red Ethereum. Mide el esfuerzo computacional necesario para ejecutar una transacción u operación, evitando el spam y el uso indebido de la red. El costo total se calcula multiplicando el gas utilizado por el gas price definido.
 
@@ -131,3 +133,7 @@ Accede a Etherscan y encuentra una transacción reciente. Identifica el remitent
 ## Próxima clase
 
 En la próxima clase, profundizaremos en el funcionamiento de la Máquina Virtual de Ethereum que ejecuta nuestro código producido en Solidity.
+
+---
+
+Este é o texto traduzido com as modificações necessárias.

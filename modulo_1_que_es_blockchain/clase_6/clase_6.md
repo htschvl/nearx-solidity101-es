@@ -1,186 +1,187 @@
-# Aula 6: **Sua Primeira Wallet**
+# Clase 6: **Tu Primer Wallet**
 
-## Abertura
+## Apertura
 
-Olá! Bem-vindo à sexta aula do nosso curso de Solidity para iniciantes. Nas aulas anteriores, exploramos os fundamentos da blockchain, contas, criptografia e assinaturas digitais. Hoje, vamos colocar em prática esses conhecimentos ao criar sua primeira wallet (carteira) e aprender como interagir com a blockchain Ethereum. Vamos descobrir o que é uma wallet, como criar uma usando a MetaMask, conectar a diferentes redes e realizar sua primeira transação utilizando faucets. Vamos começar!
+¡Hola! Bienvenido a la sexta clase de nuestro curso de Solidity para principiantes. En las clases anteriores, exploramos los fundamentos de la blockchain, cuentas, criptografía y firmas digitales. Hoy, pondremos en práctica esos conocimientos creando tu primer wallet (billetera) y aprendiendo cómo interactuar con la blockchain de Ethereum. Descubriremos qué es un wallet, cómo crear uno usando MetaMask, conectarnos a diferentes redes y realizar tu primera transacción utilizando faucets. ¡Comencemos!
 
-### Programação:
+### Programa:
 
-1. O que é uma Wallet?
-2. Conhecendo a MetaMask
-3. Utilizando Faucets e Realizando sua Primeira Transação
-4. Segurança e Melhores Práticas
+1. ¿Qué es un Wallet?
+2. Conociendo MetaMask
+3. Usando Faucets y Realizando tu Primera Transacción
+4. Seguridad y Mejores Prácticas
 
----
 
-## 1. O que é uma Wallet?
+## 1. ¿Qué es un Wallet?
 
-Uma **wallet** (carteira) é uma ferramenta essencial que permite interagir com a blockchain. Ela funciona como uma interface para gerenciar suas criptomoedas e outros ativos digitais, armazenando suas chaves privadas e facilitando o envio e recebimento de transações.
+Un **wallet** (billetera) es una herramienta esencial que permite interactuar con la blockchain. Funciona como una interfaz para gestionar tus criptomonedas y otros activos digitales, almacenando tus claves privadas y facilitando el envío y la recepción de transacciones.
 
-### O que é uma Wallet?
+### ¿Qué es un Wallet?
 
-- **Interface com a Blockchain**: As wallets permitem que você interaja com a blockchain de maneira segura e fácil.
-- **Armazenamento de Chaves Privadas**: Elas guardam suas chaves privadas, que são necessárias para acessar seus ativos digitais e assinar transações.
-- **Gerenciamento de Ativos Digitais**: Permitem visualizar saldos, enviar e receber criptomoedas e tokens.
+- **Interfaz con la Blockchain**: Los wallets te permiten interactuar con la blockchain de manera segura y sencilla.
+- **Almacenamiento de Claves Privadas**: Guardan tus claves privadas, que son necesarias para acceder a tus activos digitales y firmar transacciones.
+- **Gestión de Activos Digitales**: Permiten ver saldos, enviar y recibir criptomonedas y tokens.
 
 ### Tipos de Wallets
 
-- **Hardware Wallets**: Dispositivos físicos, como pendrives, que armazenam suas chaves privadas offline. São consideradas muito seguras. Exemplos: Ledger, Trezor.
-- **Software Wallets**: Programas instalados em computadores ou dispositivos móveis.
-  - **Desktop Wallets**: Instaladas em computadores.
-  - **Mobile Wallets**: Aplicativos para smartphones.
-  - **Extensões de Navegador**: Como a MetaMask.
-- **Paper Wallets**: Chaves privadas impressas em papel. São offline, mas podem ser perdidas ou danificadas facilmente.
+- **Hardware Wallets**: Dispositivos físicos, como pendrives, que almacenan tus claves privadas de forma offline. Son considerados muy seguros. Ejemplos: Ledger, Trezor.
+- **Software Wallets**: Programas instalados en computadoras o dispositivos móviles.
+  - **Desktop Wallets**: Instaladas en computadoras.
+  - **Mobile Wallets**: Aplicaciones para teléfonos inteligentes.
+  - **Extensiones de Navegador**: Como MetaMask.
+- **Paper Wallets**: Claves privadas impresas en papel. Son offline, pero pueden perderse o dañarse fácilmente.
 
-### Para que Serve uma Wallet?
+### ¿Para qué sirve un Wallet?
 
-- **Armazenar e Gerenciar Criptomoedas**: Você pode enviar, receber e armazenar moedas digitais como Ether (ETH).
-- **Interagir com Aplicações Descentralizadas (dApps)**: Acessar jogos, serviços financeiros e outros aplicativos na blockchain.
-- **Assinar Transações e Contratos Inteligentes**: Autorizar operações e interações com contratos na rede.
-- **Acessar e Gerenciar seus NFTs**: Visualizar e negociar tokens não fungíveis.
+- **Almacenar y Gestionar Criptomonedas**: Puedes enviar, recibir y almacenar monedas digitales como Ether (ETH).
+- **Interactuar con Aplicaciones Descentralizadas (dApps)**: Acceder a juegos, servicios financieros y otras aplicaciones en la blockchain.
+- **Firmar Transacciones y Contratos Inteligentes**: Autorizar operaciones e interacciones con contratos en la red.
+- **Acceder y Gestionar tus NFTs**: Ver y negociar tokens no fungibles.
 
-## 2. Conhecendo a MetaMask
+---
 
-A **MetaMask** é uma das wallets mais populares para interagir com a rede Ethereum. É uma extensão para navegadores que permite gerenciar suas chaves privadas e se conectar facilmente a dApps.
+# 2. Conociendo MetaMask
 
-### O que é a MetaMask?
+**MetaMask** es una de las billeteras más populares para interactuar con la red Ethereum. Es una extensión para navegadores que permite gestionar tus claves privadas y conectarte fácilmente a dApps.
 
-- **Extensão de Navegador**: Disponível para Chrome, Firefox, Brave e Edge.
-- **Facilidade de Uso**: Interface amigável, ideal para iniciantes e desenvolvedores.
-- **Open Source**: O código-fonte é aberto, permitindo auditorias de segurança.
-- **Suporte a Múltiplas Redes**: Conecta-se à Ethereum Mainnet e diversas testnets.
+### ¿Qué es MetaMask?
 
-### Criação de uma MetaMask
+- **Extensión de Navegador**: Disponible para Chrome, Firefox, Brave y Edge.
+- **Facilidad de Uso**: Interfaz amigable, ideal para principiantes y desarrolladores.
+- **Código Abierto**: El código fuente es abierto, permitiendo auditorías de seguridad.
+- **Soporte para Múltiples Redes**: Se conecta a Ethereum Mainnet y diversas testnets.
 
-**Passo-a-Passo da Instalação e Configuração:**
+### Creación de una MetaMask
 
-1. **Instalação:**
-   - Acesse o site oficial: [https://metamask.io/](https://metamask.io/).
-   - Clique em "Download" e escolha a extensão compatível com seu navegador.
-   - Instale a extensão seguindo as instruções fornecidas.
+**Paso a Paso de Instalación y Configuración:**
 
-2. **Configurando sua Wallet:**
-   - Após a instalação, clique no ícone da MetaMask no seu navegador.
-   - Clique em "Começar" e escolha "Criar uma carteira".
-   - **Crie uma senha forte** para proteger sua wallet localmente.
+1. **Instalación:**
+   - Accede al sitio oficial: [https://metamask.io/](https://metamask.io/).
+   - Haz clic en "Descargar" y elige la extensión compatible con tu navegador.
+   - Instala la extensión siguiendo las instrucciones proporcionadas.
 
-3. **Seed Phrase (Frase de Recuperação):**
-   - A MetaMask irá gerar uma **frase secreta de recuperação** de 12 palavras.
-   - **Anote essa frase em um lugar seguro e offline**. Ela é essencial para recuperar sua wallet caso esqueça a senha ou perca acesso ao dispositivo.
-   - Confirme a frase de recuperação na ordem correta para prosseguir.
+2. **Configurando tu Billetera:**
+   - Después de la instalación, haz clic en el ícono de MetaMask en tu navegador.
+   - Haz clic en "Comenzar" y selecciona "Crear una billetera".
+   - **Crea una contraseña fuerte** para proteger tu billetera localmente.
 
-4. **Wallet Criada:**
-   - Sua MetaMask está pronta para uso.
-   - Você verá seu endereço público (começa com "0x"), saldo e poderá gerenciar seus ativos.
+3. **Seed Phrase (Frase de Recuperación):**
+   - MetaMask generará una **frase secreta de recuperación** de 12 palabras.
+   - **Anota esta frase en un lugar seguro y fuera de línea**. Es esencial para recuperar tu billetera si olvidas la contraseña o pierdes acceso al dispositivo.
+   - Confirma la frase de recuperación en el orden correcto para continuar.
 
-### Conexão com Redes
+4. **Billetera Creada:**
+   - Tu MetaMask está lista para su uso.
+   - Verás tu dirección pública (comienza con "0x"), saldo y podrás gestionar tus activos.
 
-- **Mainnet (Rede Principal):**
-  - Rede oficial onde transações têm valor real.
-  - Use com cautela, pois as transações são irreversíveis e envolvem dinheiro real.
+### Conexión con Redes
 
-- **Testnets (Redes de Teste):**
-  - Redes simuladas para desenvolvimento e testes.
-  - Criptomoedas não têm valor real.
-  - Exemplos: Ropsten, Rinkeby, Goerli, Kovan.
+- **Mainnet (Red Principal):**
+  - Red oficial donde las transacciones tienen valor real.
+  - Usa con precaución, ya que las transacciones son irreversibles e involucran dinero real.
 
-**Adicionando Redes na MetaMask:**
+- **Testnets (Redes de Prueba):**
+  - Redes simuladas para desarrollo y pruebas.
+  - Las criptomonedas no tienen valor real.
+  - Ejemplos: Ropsten, Rinkeby, Goerli, Kovan.
 
-1. **Selecionar a Rede:**
-   - Clique no menu suspenso no topo da MetaMask (geralmente está escrito "Ethereum Mainnet").
-   - Selecione uma das testnets disponíveis ou clique em "Adicionar Rede".
+**Añadiendo Redes en MetaMask:**
 
-2. **Adicionar Redes Customizadas:**
-   - Para adicionar redes como a Polygon, clique em "Adicionar Rede" e insira os detalhes:
-     - **Nome da Rede**: Exemplo, "Polygon Mumbai Testnet".
-     - **URL do RPC**: Endereço para se conectar à rede.
-     - **ID da Cadeia (Chain ID)**: Identificador único da rede.
-     - **Símbolo da Moeda**: Exemplo, "MATIC".
-     - **URL do Explorador de Blocos**: Opcional, para visualizar transações.
+1. **Seleccionar la Red:**
+   - Haz clic en el menú desplegable en la parte superior de MetaMask (generalmente está escrito "Ethereum Mainnet").
+   - Selecciona una de las testnets disponibles o haz clic en "Añadir Red".
 
-3. **Salvar e Conectar:**
-   - Após inserir os dados, clique em "Salvar".
-   - Sua MetaMask estará conectada à nova rede.
+2. **Añadir Redes Personalizadas:**
+   - Para añadir redes como Polygon, haz clic en "Añadir Red" e ingresa los detalles:
+     - **Nombre de la Red**: Ejemplo, "Polygon Mumbai Testnet".
+     - **URL del RPC**: Dirección para conectarse a la red.
+     - **ID de la Cadena (Chain ID)**: Identificador único de la red.
+     - **Símbolo de la Moneda**: Ejemplo, "MATIC".
+     - **URL del Explorador de Bloques**: Opcional, para visualizar transacciones.
 
-## 3. Utilizando Faucets e Realizando sua Primeira Transação
+3. **Guardar y Conectar:**
+   - Después de ingresar los datos, haz clic en "Guardar".
+   - Tu MetaMask estará conectada a la nueva red.
 
-### O que são Faucets?
+## 3. Utilizando Faucets y Realizando tu Primera Transacción
 
-- **Definição:**
-  - Faucets são serviços online que fornecem pequenas quantidades de criptomoedas de teste gratuitamente.
-  - Servem para que desenvolvedores e usuários possam testar transações sem gastar dinheiro real.
+### ¿Qué son los Faucets?
 
-- **Utilidade:**
-  - Praticar o envio e recebimento de criptomoedas.
-  - Testar contratos inteligentes e interações com dApps.
+- **Definición:**
+  - Los faucets son servicios en línea que proporcionan pequeñas cantidades de criptomonedas de prueba de manera gratuita.
+  - Están destinados a que desarrolladores y usuarios puedan probar transacciones sin gastar dinero real.
 
-### Como Usar um Faucet?
+- **Utilidad:**
+  - Practicar el envío y recepción de criptomonedas.
+  - Probar contratos inteligentes e interacciones con dApps.
 
-1. **Obter o Endereço da sua Wallet:**
-   - Abra a MetaMask e copie o seu endereço público.
+### ¿Cómo Usar un Faucet?
 
-2. **Encontrar um Faucet Adequado:**
-   - Para Ethereum Goerli Testnet: [Goerli Faucet](https://goerlifaucet.com/).
-   - Para Polygon Mumbai Testnet: [Faucet Polygon](https://faucet.polygon.technology/).
+1. **Obtener la Dirección de tu Billetera:**
+   - Abre MetaMask y copia tu dirección pública.
 
-3. **Solicitar Criptomoedas de Teste:**
-   - Acesse o faucet e cole seu endereço no campo solicitado.
-   - Siga as instruções, que podem incluir verificações de segurança como captchas.
-   - Envie a solicitação e aguarde a confirmação.
+2. **Encontrar un Faucet Adecuado:**
+   - Para la Ethereum Goerli Testnet: [Goerli Faucet](https://goerlifaucet.com/).
+   - Para la Polygon Mumbai Testnet: [Faucet Polygon](https://faucet.polygon.technology/).
 
-4. **Verificar o Saldo:**
-   - Após alguns minutos, verifique se o saldo apareceu na sua MetaMask.
+3. **Solicitar Criptomonedas de Prueba:**
+   - Accede al faucet y pega tu dirección en el campo solicitado.
+   - Sigue las instrucciones, que pueden incluir verificaciones de seguridad como captchas.
+   - Envía la solicitud y espera la confirmación.
 
-### Realizando sua Primeira Transação
+4. **Verificar el Saldo:**
+   - Después de unos minutos, verifica si el saldo ha aparecido en tu MetaMask.
 
-1. **Enviar Criptomoedas de Teste:**
-   - Na MetaMask, clique em "Enviar".
-   - Insira o endereço de destino (pode ser uma segunda conta sua ou de um colega).
-   - Digite o valor que deseja enviar.
-   - Ajuste as taxas de gas se necessário (padrão geralmente é adequado em testnets).
-   - Clique em "Próximo" e depois em "Confirmar" para enviar.
+### Realizando tu Primera Transacción
 
-2. **Analisar a Transação no Block Explorer:**
-   - Após a confirmação, a MetaMask fornecerá um link para visualizar a transação no explorador de blocos.
-   - Clique no link ou acesse o explorador manualmente e insira o hash da transação.
-   - Verifique detalhes como status, valor enviado, endereços envolvidos e taxas.
+1. **Enviar Criptomonedas de Prueba:**
+   - En MetaMask, haz clic en "Enviar".
+   - Ingresa la dirección de destino (puede ser otra cuenta tuya o de un compañero).
+   - Escribe la cantidad que deseas enviar.
+   - Ajusta las tarifas de gas si es necesario (generalmente, el valor por defecto es adecuado en testnets).
+   - Haz clic en "Siguiente" y luego en "Confirmar" para enviar.
 
-3. **Confirmar Recebimento:**
-   - Se enviou para outra de suas contas, troque de conta na MetaMask para verificar o recebimento.
-   - Caso tenha enviado para um colega, peça para que ele confirme o recebimento.
+2. **Analizar la Transacción en el Explorador de Bloques:**
+   - Después de la confirmación, MetaMask proporcionará un enlace para visualizar la transacción en el explorador de bloques.
+   - Haz clic en el enlace o accede al explorador manualmente e ingresa el hash de la transacción.
+   - Verifica detalles como el estado, el valor enviado, las direcciones involucradas y las tarifas.
 
-## 4. Segurança e Melhores Práticas
+3. **Confirmar la Recepción:**
+   - Si enviaste a otra de tus cuentas, cambia de cuenta en MetaMask para verificar la recepción.
+   - Si lo enviaste a un compañero, pídele que confirme la recepción.
 
-Manter sua wallet segura é essencial para proteger seus ativos digitais. Nunca deixe exposta suas chaves privadas.
+## 4. Seguridad y Mejores Prácticas
 
-### Boas Práticas
+Mantener tu billetera segura es esencial para proteger tus activos digitales. Nunca dejes expuestas tus claves privadas.
 
-- **Verifique URLs e Extensões:**
-  - Certifique-se de estar no site oficial antes de baixar ou inserir informações.
-- **Desconfie de Ofertas Irresistíveis:**
-  - Golpistas podem oferecer criptomoedas gratuitas em troca de informações.
-- **Educação Contínua:**
-  - Mantenha-se atualizado sobre técnicas de phishing e outras ameaças.
+### Buenas Prácticas
 
-## Conclusão
+- **Verifica URLs y Extensiones:**
+  - Asegúrate de estar en el sitio oficial antes de descargar o ingresar información.
+- **Desconfía de Ofertas Irresistibles:**
+  - Los estafadores pueden ofrecer criptomonedas gratuitas a cambio de información.
+- **Educación Continua:**
+  - Mantente actualizado sobre técnicas de phishing y otras amenazas.
 
-Nesta aula, você aprendeu o que é uma wallet e sua importância no ecossistema blockchain. Criamos juntos uma MetaMask, conectamos a diferentes redes e realizamos sua primeira transação usando faucets. Também destacamos a importância da segurança e as melhores práticas para proteger seus ativos digitais. Com esses conhecimentos, você está pronto para explorar o mundo das criptomoedas e interagir com contratos inteligentes de forma segura.
+## Conclusión
 
-## Recapitulação
+En esta clase, aprendiste qué es una billetera y su importancia en el ecosistema blockchain. Creamos juntos una MetaMask, nos conectamos a diferentes redes y realizamos tu primera transacción usando faucets. También destacamos la importancia de la seguridad y las mejores prácticas para proteger tus activos digitales. Con estos conocimientos, estás listo para explorar el mundo de las criptomonedas e interactuar con contratos inteligentes de forma segura.
 
-1. **O que é uma Wallet?**
-   - Ferramenta que permite armazenar chaves privadas e interagir com a blockchain.
-2. **Conhecendo a MetaMask:**
-   - Extensão de navegador que facilita o gerenciamento de ativos e conexão com dApps.
-3. **Utilizando Faucets e Realizando sua Primeira Transação:**
-   - Obteve criptomoedas de teste e praticou transações em redes de teste.
-4. **Segurança e Melhores Práticas:**
-   - Aprendeu a proteger sua seed phrase, usar senhas fortes e evitar golpes.
+## Recapitulación
 
-## Lição de casa
+1. **¿Qué es una Billetera?**
+   - Herramienta que permite almacenar claves privadas e interactuar con la blockchain.
+2. **Conociendo MetaMask:**
+   - Extensión de navegador que facilita la gestión de activos y la conexión con dApps.
+3. **Usando Faucets y Realizando tu Primera Transacción:**
+   - Obtviste criptomonedas de prueba y practicaste transacciones en redes de prueba.
+4. **Seguridad y Mejores Prácticas:**
+   - Aprendiste a proteger tu seed phrase, usar contraseñas fuertes y evitar estafas.
 
-Instale a MetaMask e crie sua própria wallet. Utilize um faucet para obter criptomoedas de teste e realize uma transação.
+## Tarea
 
-## Próxima aula
+Instala MetaMask y crea tu propia billetera. Usa un faucet para obtener criptomonedas de prueba y realiza una transacción.
 
-Na próxima aula, vamos configurar nosso ambiente de desenvolvimento para começar a programar em Solidity. Você aprenderá a instalar as ferramentas necessárias e dará os primeiros passos na criação de contratos inteligentes. Até lá!
+## Próxima clase
+
+En la próxima clase, configuraremos nuestro entorno de desarrollo para comenzar a programar en Solidity. Aprenderás a instalar las herramientas necesarias y darás los primeros pasos en la creación de contratos inteligentes. ¡Hasta entonces!

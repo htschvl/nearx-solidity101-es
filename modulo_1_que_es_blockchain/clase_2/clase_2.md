@@ -1,13 +1,11 @@
 
----
-
 # Clase 2: Explorando el Block Explorer: Transacciones, Bloques y Gas
 
-## Introducción
+## Apertura
 
 ¡Hola! Bienvenido a nuestra primera clase del curso de Solidity para principiantes. En esta clase, comenzaremos a explorar el mundo de la blockchain utilizando una herramienta esencial: el block explorer. Con esta herramienta, entenderemos cómo funcionan las transacciones, los bloques y el concepto de gas en la red Ethereum. Vamos juntos a desentrañar estos conceptos fundamentales que son la base para cualquier desarrollador en blockchain.
 
-### Programación:
+### Programa:
 
 1. ¿Qué es un Block Explorer y cuál es su utilidad?
 2. Transacciones en la Blockchain

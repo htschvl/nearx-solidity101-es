@@ -4,7 +4,7 @@
 
 ¡Hola! Bienvenido a la tercera clase de nuestro curso de Solidity para principiantes. En las clases anteriores, exploramos el block explorer y comprendimos los fundamentos de Ethereum y los contratos inteligentes. Hoy, profundizaremos en los pilares fundamentales que sustentan la red Ethereum: el consenso, el estado y la Máquina Virtual de Ethereum (EVM). Estos conceptos son esenciales para entender cómo funciona la blockchain y cómo se ejecutan los contratos inteligentes.
 
-### Programación:
+### Programa:
 
 1. Mecanismos de Consenso en la Blockchain
 2. El Concepto de Estado en Ethereum
@@ -133,7 +133,7 @@ La **Máquina Virtual de Ethereum (EVM)** es el entorno de ejecución de los con
 
 ## Conclusión
 
-En esta lección, exploramos los conceptos fundamentales que permiten el funcionamiento de Ethereum:
+En esta clase, exploramos los conceptos fundamentales que permiten el funcionamiento de Ethereum:
 
 - Comprendimos cómo el **consenso** mantiene la red segura y confiable.
 - Aprendimos sobre el **estado**, que representa la información actual de la blockchain.

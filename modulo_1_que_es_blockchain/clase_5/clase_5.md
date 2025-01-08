@@ -1,165 +1,165 @@
-# Aula 5: **Criptografia: Chaves Públicas e Privadas, e Assinaturas Digitais**
+# Clase 5: **Criptografía: Claves Públicas y Privadas, y Firmas Digitales**
 
-## Abertura
+## Apertura
 
-Olá! Bem-vindo à quinta aula do nosso curso de Solidity para iniciantes. Nas aulas anteriores, exploramos os conceitos fundamentais de contas na Ethereum e como elas funcionam na blockchain. Hoje, vamos mergulhar em um tema essencial para a segurança e funcionamento da blockchain: a **criptografia**. Entenderemos como as chaves públicas e privadas funcionam e o papel das assinaturas digitais na autenticação e integridade das transações.
+¡Hola! Bienvenido a la quinta clase de nuestro curso de Solidity para principiantes. En las lecciones anteriores, exploramos los conceptos fundamentales de las cuentas en Ethereum y cómo funcionan en la blockchain. Hoy, profundizaremos en un tema esencial para la seguridad y el funcionamiento de la blockchain: **la criptografía**. Entenderemos cómo funcionan las claves públicas y privadas, y el papel de las firmas digitales en la autenticación y la integridad de las transacciones.
 
-### Programação:
+### Programa:
 
-1. Introdução à Criptografia
-2. Chaves Públicas e Privadas: A Base da Segurança
-3. Assinaturas Digitais: Como Funcionam
-4. Importância da Criptografia na Blockchain
+1. Introducción a la Criptografía
+2. Claves Públicas y Privadas: La Base de la Seguridad
+3. Firmas Digitales: Cómo Funcionan
+4. Importancia de la Criptografía en la Blockchain
 
 ---
 
-## 1. Introdução à Criptografia
+## 1. Introducción a la Criptografía
 
-A **criptografia** é o estudo e prática de técnicas para comunicação segura na presença de terceiros mal-intencionados. Na blockchain, a criptografia garante que as transações sejam seguras, autênticas e íntegras.
+La **criptografía** es el estudio y la práctica de técnicas para la comunicación segura en presencia de terceros malintencionados. En la blockchain, la criptografía asegura que las transacciones sean seguras, auténticas e íntegras.
 
-### O que é Criptografia?
+### ¿Qué es la Criptografía?
 
-- **Criptografia Simétrica**:
-  - Utiliza a **mesma chave** para criptografar e descriptografar informações.
-  - Exemplo: Duas partes compartilham uma senha secreta para se comunicar.
-- **Criptografia Assimétrica**:
-  - Utiliza um **par de chaves**: uma chave pública e uma chave privada.
-  - A chave pública criptografa os dados, e a chave privada descriptografa (ou vice-versa).
-  - Base da segurança na blockchain e nas transações digitais.
+- **Criptografía Simétrica**:
+  - Utiliza la **misma clave** para cifrar y descifrar la información.
+  - Ejemplo: Dos partes comparten una contraseña secreta para comunicarse.
+- **Criptografía Asimétrica**:
+  - Utiliza un **par de claves**: una clave pública y una clave privada.
+  - La clave pública cifra los datos, y la clave privada los descifra (o viceversa).
+  - Es la base de la seguridad en la blockchain y las transacciones digitales.
 
-### Funções Hash
+### Funciones Hash
 
-- **Definição**: Algoritmos que transformam dados de qualquer tamanho em uma sequência fixa de caracteres, chamada de hash.
+- **Definición**: Algoritmos que transforman datos de cualquier tamaño en una secuencia fija de caracteres, conocida como hash.
 - **Características**:
-  - **Determinísticas**: A mesma entrada sempre produz a mesma saída.
-  - **Unidirecionais**: É impraticável obter a entrada original a partir do hash.
-  - **Sensíveis a Alterações**: Pequenas mudanças na entrada resultam em hashes completamente diferentes.
-- **Uso na Blockchain**:
-  - Garante a integridade dos dados.
-  - Utilizado na mineração e na criação de endereços.
+  - **Determinísticas**: La misma entrada siempre produce la misma salida.
+  - **Unidireccionales**: Es impracticable obtener la entrada original a partir del hash.
+  - **Sensibles a Alteraciones**: Pequeños cambios en la entrada resultan en hashes completamente diferentes.
+- **Uso en la Blockchain**:
+  - Asegura la integridad de los datos.
+  - Se utiliza en la minería y la creación de direcciones.
 
-### Por que a Criptografia é Importante na Blockchain?
+### ¿Por qué es Importante la Criptografía en la Blockchain?
 
-- **Integridade**: Garante que as informações não foram alteradas durante a transmissão.
-- **Autenticidade**: Verifica a identidade do remetente, assegurando que a mensagem ou transação veio de quem afirma ser.
-- **Não-Repudiação**: Impede que alguém negue ter enviado uma mensagem ou transação.
+- **Integridad**: Asegura que la información no ha sido alterada durante la transmisión.
+- **Autenticidad**: Verifica la identidad del remitente, asegurando que el mensaje o la transacción provienen de quien dice ser.
+- **No Repudio**: Impide que alguien niegue haber enviado un mensaje o una transacción.
 
-## 2. Chaves Públicas e Privadas: A Base da Segurança
+## 2. Claves Públicas y Privadas: La Base de la Seguridad
 
-### O que são Chaves Públicas e Privadas?
+### ¿Qué Son las Claves Públicas y Privadas?
 
-- **Chave Pública**:
-  - Pode ser compartilhada abertamente.
-  - Utilizada para verificar assinaturas digitais feitas com a chave privada correspondente.
-  - Serve como um identificador da conta na blockchain.
-  - Endereços Ethereum são derivados da chave pública.
-- **Chave Privada**:
-  - Deve ser mantida em segredo absoluto.
-  - Utilizada para assinar transações, provando que o remetente tem autoridade sobre a conta.
-  - A perda ou exposição da chave privada compromete totalmente a segurança da conta.
+- **Clave Pública**:
+  - Puede ser compartida abiertamente.
+  - Se utiliza para verificar las firmas digitales realizadas con la clave privada correspondiente.
+  - Sirve como un identificador de la cuenta en la blockchain.
+  - Las direcciones de Ethereum se derivan de la clave pública.
+- **Clave Privada**:
+  - Debe mantenerse en absoluto secreto.
+  - Se utiliza para firmar transacciones, demostrando que el remitente tiene autoridad sobre la cuenta.
+  - La pérdida o exposición de la clave privada compromete completamente la seguridad de la cuenta.
 
-### Como as Chaves são Geradas?
+### ¿Cómo se Generan las Claves?
 
 - **Algoritmos Criptográficos**:
-  - **ECC (Elliptic Curve Cryptography)**: Utilizado na Ethereum para gerar pares de chaves.
-  - Baseia-se em propriedades matemáticas de curvas elípticas para criar chaves seguras.
-- **Processo de Geração**:
-  - Uma **chave privada** é gerada aleatoriamente.
-  - A **chave pública** é derivada matematicamente da chave privada.
+  - **ECC (Criptografía de Curva Elíptica)**: Utilizado en Ethereum para generar pares de claves.
+  - Se basa en propiedades matemáticas de las curvas elípticas para crear claves seguras.
+- **Proceso de Generación**:
+  - Se genera una **clave privada** de forma aleatoria.
+  - La **clave pública** se deriva matemáticamente de la clave privada.
 
-### Endereços na Blockchain
+### Direcciones en la Blockchain
 
-- **Derivação do Endereço**:
-  - O endereço Ethereum é derivado da chave pública, geralmente aplicando uma função hash.
-  - Exemplo simplificado:
-    - Chave Privada → Chave Pública → Hash da Chave Pública → Endereço.
+- **Derivación de la Dirección**:
+  - La dirección de Ethereum se deriva de la clave pública, generalmente aplicando una función hash.
+  - Ejemplo simplificado:
+    - Clave Privada → Clave Pública → Hash de la Clave Pública → Dirección.
 - **Identificador Único**:
-  - O endereço serve como identificador público da conta, permitindo que outros enviem transações para ela.
+  - La dirección sirve como identificador público de la cuenta, permitiendo que otros envíen transacciones a ella.
 
-### Importância das Funções Hash
+### Importancia de las Funciones Hash
 
-- **Segurança**:
-  - As funções hash garantem que seja impraticável derivar a chave privada a partir do endereço ou da chave pública.
-- **Integridade**:
-  - Usadas para verificar a integridade dos dados e das transações.
+- **Seguridad**:
+  - Las funciones hash aseguran que sea impracticable derivar la clave privada a partir de la dirección o la clave pública.
+- **Integridad**:
+  - Se utilizan para verificar la integridad de los datos y las transacciones.
 
-## 3. Assinaturas Digitais: Como Funcionam
+## 3. Firmas Digitales: Cómo Funcionan
 
-### O que é uma Assinatura Digital?
+### ¿Qué es una Firma Digital?
 
-- Uma **assinatura digital** é um esquema matemático que demonstra a autenticidade de mensagens ou documentos digitais.
-- Funciona como uma assinatura manuscrita, mas é muito mais segura.
-- Garante que a mensagem veio do remetente pretendido e não foi alterada.
+- Una **firma digital** es un esquema matemático que demuestra la autenticidad de mensajes o documentos digitales.
+- Funciona de manera similar a una firma manuscrita, pero es mucho más segura.
+- Garantiza que el mensaje proviene del remitente deseado y no ha sido alterado.
 
-### Como as Assinaturas Digitais São Criadas?
+### ¿Cómo se Crean las Firmas Digitales?
 
-1. **Preparação da Mensagem**:
-   - A mensagem ou transação a ser enviada é definida.
-2. **Criação do Hash da Mensagem**:
-   - Aplica-se uma função hash à mensagem para obter uma representação fixa.
-3. **Assinatura com a Chave Privada**:
-   - O remetente usa sua chave privada para criptografar o hash da mensagem, criando a assinatura digital.
-4. **Envio da Mensagem e Assinatura**:
-   - A mensagem, junto com a assinatura digital, é enviada ao destinatário ou à rede.
+1. **Preparación del Mensaje**:
+   - Se define el mensaje o la transacción a ser enviada.
+2. **Creación del Hash del Mensaje**:
+   - Se aplica una función hash al mensaje para obtener una representación fija.
+3. **Firma con la Clave Privada**:
+   - El remitente utiliza su clave privada para cifrar el hash del mensaje, creando la firma digital.
+4. **Envío del Mensaje y la Firma**:
+   - El mensaje, junto con la firma digital, se envía al destinatario o a la red.
 
-### Como as Assinaturas Digitais São Verificadas?
+### ¿Cómo se Verifican las Firmas Digitales?
 
-1. **Recebimento da Mensagem e Assinatura**:
-   - O destinatário recebe a mensagem e a assinatura digital.
-2. **Hash da Mensagem Recebida**:
-   - O destinatário aplica a mesma função hash à mensagem recebida.
-3. **Verificação com a Chave Pública**:
-   - Usa a chave pública do remetente para descriptografar a assinatura digital, recuperando o hash original.
-4. **Comparação dos Hashes**:
-   - Se o hash obtido da assinatura corresponder ao hash da mensagem recebida, a assinatura é válida.
+1. **Recepción del Mensaje y la Firma**:
+   - El destinatario recibe el mensaje y la firma digital.
+2. **Hash del Mensaje Recibido**:
+   - El destinatario aplica la misma función hash al mensaje recibido.
+3. **Verificación con la Clave Pública**:
+   - Utiliza la clave pública del remitente para descifrar la firma digital, recuperando el hash original.
+4. **Comparación de los Hashes**:
+   - Si el hash obtenido de la firma coincide con el hash del mensaje recibido, la firma es válida.
 
-### Benefícios das Assinaturas Digitais
+### Beneficios de las Firmas Digitales
 
-- **Autenticidade**: Confirma que a mensagem veio do proprietário da chave privada.
-- **Integridade**: Garante que a mensagem não foi alterada durante a transmissão.
-- **Não-Repudiação**: O remetente não pode negar ter enviado a mensagem.
+- **Autenticidad**: Confirma que el mensaje proviene del propietario de la clave privada.
+- **Integridad**: Garantiza que el mensaje no ha sido alterado durante la transmisión.
+- **No Repudio**: El remitente no puede negar haber enviado el mensaje.
 
-## 4. Importância da Criptografia na Blockchain
+## 4. Importancia de la Criptografía en la Blockchain
 
-### Segurança das Transações
+### Seguridad de las Transacciones
 
-- A criptografia assegura que apenas o proprietário da chave privada possa movimentar os fundos de uma conta.
-- Evita fraudes e roubos, desde que as chaves privadas sejam mantidas em segredo.
+- La criptografía asegura que solo el propietario de la clave privada pueda mover los fondos de una cuenta.
+- Evita fraudes y robos, siempre que las claves privadas se mantengan en secreto.
 
-### Integridade da Rede
+### Integridad de la Red
 
-- As funções hash e assinaturas digitais garantem que os blocos e transações não sejam adulterados.
-- Mantém a confiança na rede descentralizada, onde não há autoridade central.
+- Las funciones hash y las firmas digitales aseguran que los bloques y las transacciones no sean alterados.
+- Mantiene la confianza en la red descentralizada, donde no hay una autoridad central.
 
-### Autonomia dos Usuários
+### Autonomía de los Usuarios
 
-- Os usuários têm controle total sobre suas contas e transações.
-- Não dependem de intermediários para validar ou autorizar operações.
+- Los usuarios tienen control total sobre sus cuentas y transacciones.
+- No dependen de intermediarios para validar o autorizar operaciones.
 
-### Desafios e Responsabilidades
+### Desafíos y Responsabilidades
 
-- **Proteção das Chaves Privadas**:
-  - A responsabilidade pela segurança das chaves privadas é inteiramente do usuário.
-  - Perder a chave privada significa perder o acesso aos fundos permanentemente.
-- **Ataques e Vulnerabilidades**:
-  - Phishing, malware e outras técnicas podem ser usadas para roubar chaves privadas.
-  - É crucial educar-se sobre práticas seguras.
+- **Protección de las Claves Privadas**:
+  - La responsabilidad de la seguridad de las claves privadas es completamente del usuario.
+  - Perder la clave privada significa perder el acceso a los fondos de manera permanente.
+- **Ataques y Vulnerabilidades**:
+  - Técnicas como phishing, malware y otros métodos pueden ser utilizados para robar claves privadas.
+  - Es crucial educarse sobre prácticas seguras.
 
-## Conclusão
+## Conclusión
 
-Nesta aula, exploramos os fundamentos da criptografia e seu papel vital na segurança da blockchain Ethereum. Compreendemos como as chaves públicas e privadas funcionam em conjunto para garantir a autenticidade e integridade das transações. Aprendemos sobre as assinaturas digitais e como elas asseguram que as transações são realizadas pelo verdadeiro proprietário da conta. A criptografia é o pilar que sustenta a confiança e a segurança em sistemas descentralizados como a Ethereum.
+En esta clase, exploramos los fundamentos de la criptografía y su papel vital en la seguridad de la blockchain Ethereum. Comprendimos cómo las claves públicas y privadas trabajan juntas para garantizar la autenticidad e integridad de las transacciones. Aprendimos sobre las firmas digitales y cómo aseguran que las transacciones sean realizadas por el verdadero propietario de la cuenta. La criptografía es el pilar que sostiene la confianza y seguridad en sistemas descentralizados como Ethereum.
 
-## Recapitulação
+## Recapitulación
 
-1. **Introdução à Criptografia**: Entendemos a diferença entre criptografia simétrica e assimétrica, e a importância das funções hash.
-2. **Chaves Públicas e Privadas**: Exploramos como as chaves são geradas e seu papel na segurança das contas.
-3. **Assinaturas Digitais**: Aprendemos como as assinaturas digitais garantem a autenticidade e integridade das transações.
-4. **Importância da Criptografia na Blockchain**: Compreendemos como a criptografia protege a rede e os usuários, e a importância de proteger as chaves privadas.
+1. **Introducción a la Criptografía**: Entendimos la diferencia entre criptografía simétrica y asimétrica, y la importancia de las funciones hash.
+2. **Claves Públicas y Privadas**: Exploramos cómo se generan las claves y su papel en la seguridad de las cuentas.
+3. **Firmas Digitales**: Aprendimos cómo las firmas digitales garantizan la autenticidad e integridad de las transacciones.
+4. **Importancia de la Criptografía en la Blockchain**: Comprendimos cómo la criptografía protege la red y a los usuarios, y la importancia de proteger las claves privadas.
 
-## Lição de casa
+## Tarea
 
-Pesquise o que é uma função hash criptográfica e encontre exemplos de funções hash populares (como SHA-256 ou Keccak-256).
+Investiga qué es una función hash criptográfica y encuentra ejemplos de funciones hash populares (como SHA-256 o Keccak-256).
 
-## Próxima aula
+## Próxima clase
 
-Na próxima aula, vamos explorar criar sua wallet e enviar uma transação para a blockchain.
+En la próxima clase, exploraremos cómo crear tu billetera y enviar una transacción a la blockchain.

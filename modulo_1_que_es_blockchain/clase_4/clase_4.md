@@ -1,10 +1,10 @@
 # Clase 4: **Cuentas: Conceptos Fundamentales**
 
-## Introducción
+## Apertura
 
 ¡Hola! Bienvenido a la cuarta clase de nuestro curso de Solidity para principiantes. En las clases anteriores, exploramos conceptos fundamentales como el explorador de bloques, Ethereum, contratos inteligentes, consenso y la EVM. Hoy, vamos a profundizar nuestro entendimiento sobre un elemento esencial de la blockchain Ethereum: las **cuentas**. Comprender cómo funcionan las cuentas es crucial para interactuar con la red y desarrollar contratos inteligentes efectivos.
 
-### Programación:
+### Programa:
 
 1. Introducción a las Cuentas en la Blockchain Ethereum
 2. Cuentas Externas (EOA)
